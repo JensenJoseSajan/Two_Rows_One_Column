@@ -3,7 +3,8 @@ int main()
 {
     printf("Hello World");
     printf("Snith typed this ");
-    printf("not snith its snif")
+    printf("not snith its snif");
+    printf("trial");
     hii
     gdvhdbhdfh
     super straaaaaaaa

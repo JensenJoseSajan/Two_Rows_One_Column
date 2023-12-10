@@ -5,6 +5,7 @@ int main()
     printf("Snith typed this ");
     printf("not snith its snif")
     hii
+    dffdhfhd new line
     gdvhdbhdfh
     return 0;
 }

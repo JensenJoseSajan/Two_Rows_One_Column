@@ -6,8 +6,14 @@ int CP(int);
 int main()
 {
     int star; //used for line breaks
+<<<<<<< HEAD
     int A,M; //used for switch 1
     
+=======
+    int A,B; //used for switch 1
+    float x,y,num,a,n,sum,diff,prod,div,sq,cube,rec;
+
+>>>>>>> b2979369ff9796f8752765cfc5fca0823911181f
     for (star=20; star > 0; star--)
     {
         printf ("* * ");
@@ -23,45 +29,113 @@ int main()
         printf ("* * ");
     }
     printf ("\n");
+    printf("1. BASIC FUNCTIONS\n");
+    printf("2. TRIGONOMETRIC FUNCTIONS\n");
+    printf("3. FACTORIAL\n");
+    printf("4. MATRIX\n");
+    printf("Choose any Option : ");
+    scanf("%d",&A);
     
     switch(A)
     {
-        case 1 : //Basic Algebra //DevDarsh's Part
+        //Basic Algebra //DevDarsh's Part
+        case 1 : printf("1. ADDITION\n");
+                 printf("2. SUBTRACTION\n");
+                 printf("3. MULTIPLICATION\n");
+                 printf("4. DIVISION\n");
+                 printf("5. SQUARE\n");
+                 printf("6. SQUARE ROOT\n");
+                 printf("7. CUBE\n");
+                 printf("8. CUBE ROOT\n");
+                 printf("9. RECIPROCAL\n");
+                 printf("Choose any option : ");
+                 scanf("%d",&B);
+                 switch(B)
+                 {
+                     case 1 : printf("Enter two numbers: \n");
+                              scanf("%f%f",&x,&y);
+                              sum=x+y;
+                              printf("Sum of %f and %f = %f",x,y,sum);
+                              break;
+                     case 2 : printf("Enter two numbers: \n");
+                              scanf("%f%f",&x,&y);
+                              diff=x-y;
+                              printf("Difference of %f and %f = %f",x,y,diff);
+                              break;
+                     case 3 : printf("Enter two numbers: \n");
+                              scanf("%f%f",&x,&y);
+                              prod=x*y;
+                              printf("Product of %f and %f = %f",x,y,prod);
+                              break;
+                     case 4 : printf("Enter two numbers: \n");
+                              scanf("%f%f",&x,&y);
+                              div=x/y;
+                              printf("Quotient of %f and %f = %f",x,y,div);
+                              break;
+                     case 5 : printf("Enter a number: \n");
+                              scanf("%f",&x);
+                              sq=x*x;
+                              printf("Square of %f = %f",x,sq);
+                              break;
+                     case 6 : printf("Enter a number: \n");
+                              scanf("%f",&x);
+                              printf("Square Root of %f = %f",x,sqrt(x));
+                              break;
+                     case 7 : printf("Enter a number: \n");
+                              scanf("%f",&x);
+                              cube=x*x*x;
+                              printf("Cube of %f = %f",x,cube);
+                              break;
+                     case 8 : printf("Enter a number: \n");
+                              scanf("%f",&x);
+                              printf("Cube Root of %f = %f",x,cbrt(x));
+                              break;
+                     case 9 : printf("Enter a number: \n");
+                              scanf("%f",&x);
+                              if(x==0)
+                              {
+                                  printf("Reciprocal of zero is undefined");
+                              }
+                              else
+                              {
+                                  rec=1/x;
+                                  printf("Reciprocal of %f = %f",x,rec);
+                              }
+                              break;
+                     default: printf("Invalid Menu Number");
+                              break;
+                 }
+                 break;
+        //Trigonometroc Functions //Snith and Affan's Part
+        case 2 : 
 
-        case 2 : //Trigonometroc Functions //Snith and Affan's Part
-    
-        case 3 : //Factorial //Niranjan's
+        //Factorial //Niranjan's
+        case 3 : printf("Enter the menu number: ");
+                 scanf("%d",M);
+                 switch(M)
+                 {
+                    case 1 : printf("Enter the number:");
+                             scanf("%d",&num);
+                             a=fact(n);
+                             printf("Factorial of the given number=%d",a);
+                 }
+                 int fact(int x)
+                 {
+                    int F;
+                    if(x==0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        F=x*fact(x-1);
+                        return F;
+                    }
+                             break;
 
-        printf("Enter the menu number: ");
-        scanf("%d",M);
-        switch(M)
-        {
-            case 1:
-            int main()
-            {
-                int num,a,n;
-                printf("Enter the number:");
-                scanf("%d",&num);
-                a=fact(n);
-                printf("Factorial of the given number=%d",a);
-            }
-            int fact(int x)
-            {
-                int F;
-                if(x==0)
-                {
-                    return 1;
-                }
-                else
-                {
-                    F=x*fact(x-1);
-                    return F;
-                }
-            break;
+                 }
 
-            }
-
-            case 2:
+                    case 2:
                 int n,r,per,comb,f;
                 printf("Enter the value of n:");
                 scanf("%d",&n);
@@ -89,8 +163,9 @@ int main()
             default:
             printf("Invalid Menu");
         }
-        
-        case 4 : //Matrix Functions //Jensen and Raaj's Part
+
+        //Matrix Functions //Jensen and Raaj's Part
+        case 4 : 
     }
 
     return 0;

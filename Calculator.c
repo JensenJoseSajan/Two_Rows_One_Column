@@ -24,7 +24,7 @@ int main()
     
     switch(A)
     {
-        case 1 : //Basic Algebra //Devdarsh's Part
+        case 1 : //Basic Algebra //DevDarsh's Part
 
         case 2 : //Trigonometroc Functions //Snith and Affan's Part
 

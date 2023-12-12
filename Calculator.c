@@ -6,7 +6,7 @@ int CP(int);
 int main()
 {
     int star;   //used for line breaks
-    int A,B,M; //used for switches
+    int A,B,M,T; //used for switches
     int num,a,n,r,per,comb,f;
     float x,y,sum,diff,prod,div,sq,cube,rec;
     double ang,rad; //ang is to be inputed by the user, rad is the radian value of the angle
@@ -107,7 +107,7 @@ int main()
         //Trigonometroc Functions //Snith and Affan's Part
         case 2 : 
         
-        
+
         //Factorial //Niranjan's
         case 3 : printf("Enter the menu number: ");
                  scanf("%d",M);

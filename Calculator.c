@@ -104,7 +104,18 @@ int main()
                  break;
         //Trigonometroc Functions //Snith and Affan's Part
         case 2 : 
-        printf("1. Sine of the angle\n");
+        printf("Press 1 to find sine of the angle\n");
+        printf("Press 2 to find cosine of the angle\n");
+        printf("Press 3 to find tangent of the angle\n");
+        printf("Press 4 to find cotangent of the angle\n");
+        printf("Press 5 to find secant of the angle\n");
+        printf("Press 6 to find cosecant of the angle\n");
+        printf("Press 7 to find inverse of sine of the angle\n");
+        printf("Press 8 to find inverse of cosine of the angle\n");
+        printf("Press 9 to find inverse of tangent of the angle\n");
+        printf("Press 10 to find inverse of cotangent of the angle\n");
+        printf("Press 11 to find inverse of secant of the angle\n");
+        printf("Press 12 to find inverse of cosecant of the angle\n");
 
         //Factorial //Niranjan's
         case 3 : printf("Enter the menu number: ");

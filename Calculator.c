@@ -9,6 +9,7 @@ int main()
     int A,B,M; //used for switches
     int num,a,n,r,per,comb,f;
     float x,y,sum,diff,prod,div,sq,cube,rec;
+    double ang,rad; //ang is to be inputed by the user, rad is the radian value of the angle
 
     for (star=20; star > 0; star--)
     {
@@ -102,21 +103,11 @@ int main()
                               break;
                  }
                  break;
+        
         //Trigonometroc Functions //Snith and Affan's Part
         case 2 : 
-        printf("Press 1 to find sine of the angle\n");
-        printf("Press 2 to find cosine of the angle\n");
-        printf("Press 3 to find tangent of the angle\n");
-        printf("Press 4 to find cotangent of the angle\n");
-        printf("Press 5 to find secant of the angle\n");
-        printf("Press 6 to find cosecant of the angle\n");
-        printf("Press 7 to find inverse of sine of the angle\n");
-        printf("Press 8 to find inverse of cosine of the angle\n");
-        printf("Press 9 to find inverse of tangent of the angle\n");
-        printf("Press 10 to find inverse of cotangent of the angle\n");
-        printf("Press 11 to find inverse of secant of the angle\n");
-        printf("Press 12 to find inverse of cosecant of the angle\n");
-
+        
+        
         //Factorial //Niranjan's
         case 3 : printf("Enter the menu number: ");
                  scanf("%d",M);

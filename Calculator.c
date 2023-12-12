@@ -35,110 +35,129 @@ int main()
     
     switch(A)
     {
-        //Basic Algebra //DevDarsh's Part
-        case 1 : printf("1. ADDITION\n");
-                 printf("2. SUBTRACTION\n");
-                 printf("3. MULTIPLICATION\n");
-                 printf("4. DIVISION\n");
-                 printf("5. SQUARE\n");
-                 printf("6. SQUARE ROOT\n");
-                 printf("7. CUBE\n");
-                 printf("8. CUBE ROOT\n");
-                 printf("9. RECIPROCAL\n");
-                 printf("Choose any option : ");
-                 scanf("%d",&B);
-                 switch(B)
-                 {
-                    case 1 : printf("Enter two numbers : \n");
-                             scanf("%f%f",&x,&y);
-                             sum=x+y;
-                             printf("Sum of %f and %f = %f",x,y,sum);
-                             break;
-                    case 2 : printf("Enter two numbers : \n");
-                             scanf("%f%f",&x,&y);
-                             diff=x-y;
-                             printf("Difference of %f and %f = %f",x,y,diff);
-                             break;
-                    case 3 : printf("Enter two numbers : \n");
-                             scanf("%f%f",&x,&y);
-                             prod=x*y;
-                             printf("Product of %f and %f = %f",x,y,prod);
-                             break;
-                    case 4 : printf("Enter two numbers : \n");
-                             scanf("%f%f",&x,&y);
-                             div=x/y;
-                             printf("Quotient of %f and %f = %f",x,y,div);
-                             break;
-                    case 5 : printf("Enter a number : \n");
-                             scanf("%f",&x);
-                             sq=x*x;
-                             printf("Square of %f = %f",x,sq);
-                             break;
-                    case 6 : printf("Enter a number : \n");
-                             scanf("%f",&x);
-                             printf("Square Root of %f = %f",x,sqrt(x));
-                             break;
-                    case 7 : printf("Enter a number : \n");
-                             scanf("%f",&x);
-                             cube=x*x*x;
-                             printf("Cube of %f = %f",x,cube);
-                             break;
-                    case 8 : printf("Enter a number : \n");
-                             scanf("%f",&x);
-                             printf("Cube Root of %f = %f",x,cbrt(x));
-                             break;
-                    case 9 : printf("Enter a number : \n");
-                             scanf("%f",&x);
-                             if(x==0)
-                             {
-                                printf("Reciprocal of zero is undefined");
-                             }
-                             else
-                             {
-                                rec=1/x;
-                                printf("Reciprocal of %f = %f",x,rec);
-                             }
-                             break;
-                    default : printf("Invalid Menu Number");
-                              break;
-                 }
-                 break;
-        
-        //Trigonometroc Functions //Snith and Affan's Part
-        case 2 : 
-        printf("Press 1 to find sine of the angle\n");
-        printf("Press 2 to find cosine of the angle\n");
-        printf("Press 3 to find tangent of the angle\n");
-        printf("Press 4 to find cotangent of the angle\n");
-        printf("Press 5 to find secant of the angle\n");
-        printf("Press 6 to find cosecant of the angle\n");
-        printf("Press 7 to find inverse of sine of the angle\n");
-        printf("Press 8 to find inverse of cosine of the angle\n");
-        printf("Press 9 to find inverse of tangent of the angle\n");
-        printf("Press 10 to find inverse of cotangent of the angle\n");
-        printf("Press 11 to find inverse of secant of the angle\n");
-        printf("Press 12 to find inverse of cosecant of the angle\n");
-        
-        //line break
-        for (star=20; star > 0; star--)
-        {
-            printf ("* * ");
-        }
-        printf ("\n");
-        
-        printf("Enter the angle in degrees: ");
-        scanf("%lf",&ang);
-        rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in math.h header file only works with radian measures.
-        printf("Enter the menu number: ");
-        scanf("%d", &T);
+      //Basic Algebra //DevDarsh's Part
+      case 1 : 
+      printf("1. ADDITION\n");
+      printf("2. SUBTRACTION\n");
+      printf("3. MULTIPLICATION\n");
+      printf("4. DIVISION\n");
+      printf("5. SQUARE\n");
+      printf("6. SQUARE ROOT\n");
+      printf("7. CUBE\n");
+      printf("8. CUBE ROOT\n");
+      printf("9. RECIPROCAL\n");
+      printf("Choose any option : ");
+      scanf("%d",&B);
+      switch(B)
+      {
+         case 1 : 
+         printf("Enter two numbers : \n");
+         scanf("%f%f",&x,&y);
+         sum=x+y;
+         printf("Sum of %f and %f = %f",x,y,sum);
+         break;
+                    
+         case 2 : 
+         printf("Enter two numbers : \n");
+         scanf("%f%f",&x,&y);
+         diff=x-y;
+         printf("Difference of %f and %f = %f",x,y,diff);
+         break;
+         
+         case 3 : 
+         printf("Enter two numbers : \n");
+         scanf("%f%f",&x,&y);
+         prod=x*y;
+         printf("Product of %f and %f = %f",x,y,prod);
+         break;
+         
+         case 4 : 
+         printf("Enter two numbers : \n");
+         scanf("%f%f",&x,&y);
+         div=x/y;
+         printf("Quotient of %f and %f = %f",x,y,div);
+         break;
+                    
+         case 5 : 
+         printf("Enter a number : \n");
+         scanf("%f",&x);
+         sq=x*x;
+         printf("Square of %f = %f",x,sq);
+         break;
+         
+         case 6 : 
+         printf("Enter a number : \n");
+         scanf("%f",&x);
+         printf("Square Root of %f = %f",x,sqrt(x));
+         break;
+         
+         case 7 : 
+         printf("Enter a number : \n");
+         scanf("%f",&x);
+         cube=x*x*x;
+         printf("Cube of %f = %f",x,cube);
+         break;
+         
+         case 8 : 
+         printf("Enter a number : \n");
+         scanf("%f",&x);
+         printf("Cube Root of %f = %f",x,cbrt(x));
+         break;
+         
+         case 9 : 
+         printf("Enter a number : \n");
+         scanf("%f",&x);
+         if(x==0)
+         {
+            printf("Reciprocal of zero is undefined");
+         }
+         else
+         {
+            rec=1/x;
+            printf("Reciprocal of %f = %f",x,rec);
+         }
+         break;
+         
+         default : printf("Invalid Menu Number");
 
-        switch(T)
-        {
+      }
+      break;
+        
+      //Trigonometroc Functions //Snith and Affan's Part
+      case 2 : 
+      printf("Press 1 to find sine of the angle\n");
+      printf("Press 2 to find cosine of the angle\n");
+      printf("Press 3 to find tangent of the angle\n");
+      printf("Press 4 to find cotangent of the angle\n");
+      printf("Press 5 to find secant of the angle\n");
+      printf("Press 6 to find cosecant of the angle\n");
+      printf("Press 7 to find inverse of sine of the angle\n");
+      printf("Press 8 to find inverse of cosine of the angle\n");
+      printf("Press 9 to find inverse of tangent of the angle\n");
+      printf("Press 10 to find inverse of cotangent of the angle\n");
+      printf("Press 11 to find inverse of secant of the angle\n");
+      printf("Press 12 to find inverse of cosecant of the angle\n");
+        
+      //line break
+      for (star=20; star > 0; star--)
+      {
+         printf ("* * ");
+      }
+      printf ("\n");
+        
+      printf("Enter the angle in degrees: ");
+      scanf("%lf",&ang);
+      rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in math.h header file only works with radian measures.
+      printf("Enter the menu number: ");
+      scanf("%d", &T);
+
+      switch(T)
+      {
          case 1:
          break;
 
          case 2:
-        }
+      }
 
         //Factorial //Niranjan's
         case 3 : printf("Enter the menu number: ");

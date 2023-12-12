@@ -104,6 +104,7 @@ int main()
                  break;
         //Trigonometroc Functions //Snith and Affan's Part
         case 2 : 
+        printf("1. Sine of the angle\n");
 
         //Factorial //Niranjan's
         case 3 : printf("Enter the menu number: ");

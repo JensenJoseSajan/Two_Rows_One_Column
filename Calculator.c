@@ -132,6 +132,14 @@ int main()
         printf("Enter the menu number: ");
         scanf("%d", &T);
 
+        switch(T)
+        {
+         case 1:
+         break;
+
+         case 2:
+        }
+
         //Factorial //Niranjan's
         case 3 : printf("Enter the menu number: ");
                  scanf("%d",M);

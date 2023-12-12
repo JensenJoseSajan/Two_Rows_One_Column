@@ -158,6 +158,7 @@ int main()
 
          case 2:
       }
+      //End of Snith's and Affan's Part.
 
         //Factorial //Niranjan's
         case 3 : printf("Enter the menu number: ");

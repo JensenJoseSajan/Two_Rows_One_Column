@@ -19,8 +19,9 @@ int main()
 
    //The Welcoming statement.
    printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'\n");
-   printf("In this calculator, you can run programs like basic algebra, trignometric functions, factorial functions and matrix functions\n\n");
+   printf("In this calculator, you can run programs like Basic Algebra, Trignometric Functions, Factorial Functions and Matrix Functions\n\n");
 
+   printf ("\n");
    for (star=20; star > 0; star--) //line break
    {
        printf ("* * ");
@@ -34,6 +35,7 @@ int main()
    printf("Choose any Option : ");
    scanf("%d",&A);
 
+   printf ("\n");
    for (star=20; star > 0; star--) //line break
    {
       printf ("* * ");
@@ -143,11 +145,12 @@ int main()
               printf("12. cosecant inverse Function\n");
         
               printf("Enter the angle in degrees : ");
-              scanf("%f",&ang);
+              scanf("%lf",&ang);
               rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
               printf("Choose an Function : ");
               scanf("%d",&T);
 
+              printf ("\n");
               for (star=20; star > 0; star--) //line break
               {
                  printf ("* * ");
@@ -168,10 +171,11 @@ int main()
      //Factorial //Niranjan's Part
      case 3 : printf("1. FACTORIAL\n");
               printf("2. PERMUTATION\n");
-              printf("3. COMBINATION\n")
+              printf("3. COMBINATION\n");
               printf("Enter an Operation : ");
               scanf("%d",M);
 
+              printf ("\n");
               for (star=20; star > 0; star--) //line break
               {
                  printf ("* * ");
@@ -230,6 +234,7 @@ int main()
      case 4 : 
 
         
+              printf ("\n");
               for (star=20; star > 0; star--) //line break
               {
                  printf ("* * ");

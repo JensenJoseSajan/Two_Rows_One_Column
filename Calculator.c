@@ -8,7 +8,7 @@ int main()
    int star;   //used for line breaks
    int A,B,M,T; //used for switches
    int num,a,n,r,per,comb,f,i,z;
-   float x,y,c,c=0,d=1;
+   float x,y,c=0,d=1;
    double ang,rad; //ang is to be inputed by the user, rad is the radian value of the angle
 
    for (star=20; star > 0; star--) //line break

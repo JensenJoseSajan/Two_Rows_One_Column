@@ -35,7 +35,7 @@ int main()
    scanf("%d",&A);
 
    printf ("\n");
-   for (star=20; star > 0; star--) //line break
+   for (star=32; star > 0; star--) //line break
    {
       printf ("* * ");
    }
@@ -57,7 +57,7 @@ int main()
               scanf("%d",&B);
                
               printf ("\n");
-              for (star=20; star > 0; star--) //line break
+              for (star=32; star > 0; star--) //line break
               {
                  printf ("* * ");
               }
@@ -154,7 +154,7 @@ int main()
               scanf("%d",&T);
 
               printf ("\n");
-              for (star=20; star > 0; star--) //line break
+              for (star=32; star > 0; star--) //line break
               {
                  printf ("* * ");
               }
@@ -179,7 +179,7 @@ int main()
               scanf("%d",M);
 
               printf ("\n");
-              for (star=20; star > 0; star--) //line break
+              for (star=32; star > 0; star--) //line break
               {
                  printf ("* * ");
               }
@@ -238,7 +238,7 @@ int main()
 
         
               printf ("\n");
-              for (star=20; star > 0; star--) //line break
+              for (star=32; star > 0; star--) //line break
               {
                  printf ("* * ");
               }

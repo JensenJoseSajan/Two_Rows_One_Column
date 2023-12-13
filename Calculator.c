@@ -11,22 +11,21 @@ int main()
    float x,y,c=0,d=1;
    double ang,rad; //ang is to be inputed by the user, rad is the radian value of the angle
 
-   for (star=20; star > 0; star--) //line break
+   for (star=32; star > 0; star--) //line break
    {
        printf ("* * ");
    }
    printf ("\n");
 
    //The Welcoming statement.
-   printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'\n");
+   printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'.\n");
    printf("In this calculator, you can run programs like Basic Algebra, Trignometric Functions, Factorial Functions and Matrix Functions\n\n");
 
-   printf ("\n");
-   for (star=20; star > 0; star--) //line break
+   for (star=32; star > 0; star--) //line break
    {
        printf ("* * ");
    }
-   printf ("\n");
+   printf ("\n\n");
 
    printf("1. BASIC FUNCTIONS\n");
    printf("2. TRIGONOMETRIC FUNCTIONS\n");
@@ -40,7 +39,7 @@ int main()
    {
       printf ("* * ");
    }
-   printf ("\n");
+   printf ("\n\n");
     
    switch(A)
    {
@@ -56,11 +55,13 @@ int main()
               printf("9. RECIPROCAL\n");
               printf("Choose an Operation : ");
               scanf("%d",&B);
-               for (star=20; star > 0; star--) //line break
+               
+              printf ("\n");
+              for (star=20; star > 0; star--) //line break
               {
                  printf ("* * ");
               }
-              printf ("\n");
+              printf ("\n\n");
                
               switch(B)
               {
@@ -155,7 +156,7 @@ int main()
               {
                  printf ("* * ");
               }
-              printf ("\n");
+              printf ("\n\n");
      
               switch(T)
               {
@@ -180,7 +181,7 @@ int main()
               {
                  printf ("* * ");
               }
-              printf ("\n");
+              printf ("\n\n");
               
               switch(M)
               {
@@ -239,7 +240,7 @@ int main()
               {
                  printf ("* * ");
               }
-              printf ("\n");
+              printf ("\n\n");
 
               switch()
               {

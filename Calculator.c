@@ -19,7 +19,7 @@ int main()
 
    //The Welcoming statement.
    printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'.\n");
-   printf("In this calculator, you can run programs like Basic Algebra, Trignometric Functions, Factorial Functions and Matrix Functions\n\n");
+   printf("In this calculator, you can run programs like Basic Algebra, Trignometric Functions, Factorial Functions and Matrix Functions.\n\n");
 
    for (star=32; star > 0; star--) //line break
    {
@@ -31,7 +31,7 @@ int main()
    printf("2. TRIGONOMETRIC FUNCTIONS\n");
    printf("3. FACTORIAL\n");
    printf("4. MATRIX\n");
-   printf("Choose any Option : ");
+   printf("\nChoose a Function : ");
    scanf("%d",&A);
 
    printf ("\n");
@@ -53,7 +53,7 @@ int main()
               printf("7. CUBE\n");
               printf("8. CUBE ROOT\n");
               printf("9. RECIPROCAL\n");
-              printf("Choose an Operation : ");
+              printf("\nChoose an Operation : ");
               scanf("%d",&B);
                
               printf ("\n");
@@ -67,31 +67,31 @@ int main()
               {
                  case 1 : printf("How many numbers do you want to add ?\n");
                           scanf("%d",&z);
-                          printf("Enter the numbers : \n");
+                          printf("Enter the numbers : ");
                           for(i=1; i<=z; i++)
                           {
-                              scanf("%f",&x);
+                              scanf("%f\n",&x);
                               c=c+x;
                           }
                           printf("Sum = %f",c);
                           break;
-                 case 2 : printf("Enter two numbers : \n");
-                          scanf("%f%f",&x,&y);
+                 case 2 : printf("Enter two numbers : ");
+                          scanf("%f\n%f",&x,&y);
                           c=x-y;
                           printf("Difference of %f and %f = %f",x,y,c);
                           break;
                  case 3 : printf("How many numbers do you want to multiply ?\n");
                           scanf("%d",&z);
-                          printf("Enter the numbers : \n");
+                          printf("Enter the numbers : ");
                           for(i=1; i<=z; i++)
                           {
-                              scanf("%f",&x);
+                              scanf("%f\n",&x);
                               d=d*x;
                           }
                           printf("Product = %f",d);
                           break;
-                 case 4 : printf("Enter two numbers : \n");
-                          scanf("%f%f",&x,&y);
+                 case 4 : printf("Enter two numbers : ");
+                          scanf("%f\n%f",&x,&y);
                           c=x/y;
                           printf("Quotient of %f and %f = %f",x,y,c);
                           break;
@@ -148,7 +148,7 @@ int main()
               printf("Enter the angle in degrees : ");
               scanf("%lf",&ang);
               rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
-              printf("Choose an Function : ");
+              printf("\nChoose an Function : ");
               scanf("%d",&T);
 
               printf ("\n");

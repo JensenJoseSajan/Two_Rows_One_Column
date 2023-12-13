@@ -8,7 +8,7 @@ int main()
    int star;   //used for line breaks
    int A,B,M,T; //used for switches
    int num,a,n,r,per,comb,f,i,z;
-   float x,y,c=0,d=1;
+   float x,y,c=0,d=1,e;
    double ang,rad; //ang is to be inputed by the user, rad is the radian value of the angle
 
    for (star=32; star > 0; star--) //line break
@@ -90,30 +90,32 @@ int main()
                           }
                           printf("Product = %f",d);
                           break;
-                 case 4 : printf("Enter two numbers : ");
+                 case 4 : printf("Enter the Divident and Divisor : ");
                           scanf("%f\n%f",&x,&y);
                           c=x/y;
-                          printf("Quotient of %f and %f = %f",x,y,c);
+                          //e=x%y;(Check this)
+                          printf("Quotient = %f",c);
+                          //printf("Reminder = %f",e);(check this)
                           break;
-                 case 5 : printf("Enter a number : \n");
+                 case 5 : printf("Enter a number : ");
                           scanf("%f",&x);
                           c=x*x;
                           printf("Square of %f = %f",x,c);
                           break;
-                 case 6 : printf("Enter a number : \n");
+                 case 6 : printf("Enter a number : ");
                           scanf("%f",&x);
                           printf("Square Root of %f = %f",x,sqrt(x));
                           break;
-                 case 7 : printf("Enter a number : \n");
+                 case 7 : printf("Enter a number : ");
                           scanf("%f",&x);
                           c=x*x*x;
                           printf("Cube of %f = %f",x,c);
                           break;
-                 case 8 : printf("Enter a number : \n");
+                 case 8 : printf("Enter a number : ");
                           scanf("%f",&x);
                           printf("Cube Root of %f = %f",x,cbrt(x));
                           break;
-                 case 9 : printf("Enter a number : \n");
+                 case 9 : printf("Enter a number : ");
                           scanf("%f",&x);
                           if(x==0)
                           {

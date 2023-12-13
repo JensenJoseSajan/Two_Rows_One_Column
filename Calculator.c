@@ -8,7 +8,8 @@ int main()
     int star;   //used for line breaks
     int A,B,M,T; //used for switches
     int num,a,n,r,per,comb,f;
-    float x,y,sum,diff,prod,div,sq,cube,rec;
+    float x,y,c,c=0,d=1;
+    int i,z;
     double ang,rad; //ang is to be inputed by the user, rad is the radian value of the angle
 
     for (star=20; star > 0; star--)
@@ -35,95 +36,87 @@ int main()
     
     switch(A)
     {
-      //Basic Algebra //DevDarsh's Part
-      case 1 : 
-      printf("1. ADDITION\n");
-      printf("2. SUBTRACTION\n");
-      printf("3. MULTIPLICATION\n");
-      printf("4. DIVISION\n");
-      printf("5. SQUARE\n");
-      printf("6. SQUARE ROOT\n");
-      printf("7. CUBE\n");
-      printf("8. CUBE ROOT\n");
-      printf("9. RECIPROCAL\n");
-      printf("Choose any option : ");
-      scanf("%d",&B);
-      switch(B)
-      {
-         case 1 : 
-         printf("Enter two numbers : \n");
-         scanf("%f%f",&x,&y);
-         sum=x+y;
-         printf("Sum of %f and %f = %f",x,y,sum);
-         break;
-                    
-         case 2 : 
-         printf("Enter two numbers : \n");
-         scanf("%f%f",&x,&y);
-         diff=x-y;
-         printf("Difference of %f and %f = %f",x,y,diff);
-         break;
-         
-         case 3 : 
-         printf("Enter two numbers : \n");
-         scanf("%f%f",&x,&y);
-         prod=x*y;
-         printf("Product of %f and %f = %f",x,y,prod);
-         break;
-         
-         case 4 : 
-         printf("Enter two numbers : \n");
-         scanf("%f%f",&x,&y);
-         div=x/y;
-         printf("Quotient of %f and %f = %f",x,y,div);
-         break;
-                    
-         case 5 : 
-         printf("Enter a number : \n");
-         scanf("%f",&x);
-         sq=x*x;
-         printf("Square of %f = %f",x,sq);
-         break;
-         
-         case 6 : 
-         printf("Enter a number : \n");
-         scanf("%f",&x);
-         printf("Square Root of %f = %f",x,sqrt(x));
-         break;
-         
-         case 7 : 
-         printf("Enter a number : \n");
-         scanf("%f",&x);
-         cube=x*x*x;
-         printf("Cube of %f = %f",x,cube);
-         break;
-         
-         case 8 : 
-         printf("Enter a number : \n");
-         scanf("%f",&x);
-         printf("Cube Root of %f = %f",x,cbrt(x));
-         break;
-         
-         case 9 : 
-         printf("Enter a number : \n");
-         scanf("%f",&x);
-         if(x==0)
-         {
-            printf("Reciprocal of zero is undefined");
-         }
-         else
-         {
-            rec=1/x;
-            printf("Reciprocal of %f = %f",x,rec);
-         }
-         break;
-         
-         default : printf("Invalid Menu Number");
-
-      }
-      break;
+      //Basic Algebra //Dev Darsh's Part
+      case 1 : //Basic Algebra //DevDarsh's Part
+                printf("1. ADDITION\n");
+                printf("2. SUBTRACTION\n");
+                printf("3. MULTIPLICATION\n");
+                printf("4. DIVISION\n");
+                printf("5. SQUARE\n");
+                printf("6. SQUARE ROOT\n");
+                printf("7. CUBE\n");
+                printf("8. CUBE ROOT\n");
+                printf("9. RECIPROCAL\n");
+                printf("Choose any option: ");
+                scanf("%d",&B);
+                switch(B)
+                {
+                    case 1 : printf("How many numbers do you want to add?\n");
+                             scanf("%d",&z);
+                             printf("Enter the numbers: \n");
+                             for(i=1; i<=z; i++)
+                             {
+                                 scanf("%f",&x);
+                                 c=c+x;
+                             }
+                             printf("Sum = %f",c);
+                             break;
+                    case 2 : printf("Enter two numbers: \n");
+                             scanf("%f%f",&x,&y);
+                             c=x-y;
+                             printf("Difference of %f and %f = %f",x,y,c);
+                             break;
+                    case 3 : printf("How many numbers do you want to multiply?\n");
+                             scanf("%d",&z);
+                             printf("Enter the numbers: \n");
+                             for(i=1; i<=z; i++)
+                             {
+                                 scanf("%f",&x);
+                                 d=d*x;
+                             }
+                             printf("Product = %f",d);
+                             break;
+                    case 4 : printf("Enter two numbers: \n");
+                             scanf("%f%f",&x,&y);
+                             c=x/y;
+                             printf("Quotient of %f and %f = %f",x,y,c);
+                             break;
+                    case 5 : printf("Enter a number: \n");
+                             scanf("%f",&x);
+                             c=x*x;
+                             printf("Square of %f = %f",x,c);
+                             break;
+                    case 6 : printf("Enter a number: \n");
+                             scanf("%f",&x);
+                             printf("Square Root of %f = %f",x,sqrt(x));
+                             break;
+                    case 7 : printf("Enter a number: \n");
+                             scanf("%f",&x);
+                             c=x*x*x;
+                             printf("Cube of %f = %f",x,c);
+                             break;
+                    case 8 : printf("Enter a number: \n");
+                             scanf("%f",&x);
+                             printf("Cube Root of %f = %f",x,cbrt(x));
+                             break;
+                    case 9 : printf("Enter a number: \n");
+                             scanf("%f",&x);
+                             if(x==0)
+                             {
+                                 printf("Reciprocal of zero is undefined");
+                             }
+                             else
+                             {
+                                 c=1/x;
+                                 printf("Reciprocal of %f = %f",x,c);
+                             }
+                             break;
+                    default: printf("Invalid Menu Number");
+                             break;
+                }
+                break;
         
-      //Trigonometroc Functions //Snith and Affan's Part
+      //Trigonometric Functions //Snith and Affan's Part
       case 2 : 
       printf("Press 1 to find sine of the angle\n");
       printf("Press 2 to find cosine of the angle\n");
@@ -161,7 +154,9 @@ int main()
       //End of Snith's and Affan's Part.
 
         //Factorial //Niranjan's
-        case 3 : printf("Enter the menu number: ");
+        case 3 : printf("1. FACTORIAL\n");
+                 printf("2. PERMUTATION AND COMBINATION\n");
+                 printf("Enter the menu number: ");
                  scanf("%d",M);
                  switch(M)
                  {
@@ -169,7 +164,7 @@ int main()
                              scanf("%d",&num);
                              a=fact(n);
                              printf("Factorial of the given number=%d",a);
-                 }
+                 
                  int fact(int u)
                  {
                     int F;
@@ -210,6 +205,7 @@ int main()
                  }
                     default : printf("Invalid Menu Number");
                               break;
+                 }
 
         //Matrix Functions //Jensen and Raaj's Part
         case 4 : 

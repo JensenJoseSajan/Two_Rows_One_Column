@@ -67,59 +67,63 @@ int main()
               {
                  case 1 : printf("How many numbers do you want to add ?\n");
                           scanf("%d",&z);
-                          printf("Enter the numbers : ");
+                          printf("Enter the numbers : \n");
                           for(i=1; i<=z; i++)
                           {
-                              scanf("%f\n",&x);
+                              scanf("%f",&x);
                               c=c+x;
                           }
                           printf("Sum = %f",c);
                           break;
-                 case 2 : printf("Enter two numbers : ");
+                 case 2 : printf("Enter two numbers : \n");
                           scanf("%f\n%f",&x,&y);
                           c=x-y;
                           printf("Difference of %f and %f = %f",x,y,c);
                           break;
                  case 3 : printf("How many numbers do you want to multiply ?\n");
                           scanf("%d",&z);
-                          printf("Enter the numbers : ");
+                          printf("Enter the numbers : \n");
                           for(i=1; i<=z; i++)
                           {
-                              scanf("%f\n",&x);
+                              scanf("%f",&x);
                               d=d*x;
                           }
                           printf("Product = %f",d);
                           break;
-                 case 4 : printf("Enter the Divident and Divisor : ");
-                          scanf("%f\n%f",&x,&y);
+                 case 4 : printf("Enter the Divident and Divisor : \n");
+                          scanf("%f%f",&x,&y);
                           c=x/y;
-                          //e=x%y;(Check this)
                           printf("Quotient = %f",c);
-                          //printf("Reminder = %f",e);(check this)
                           break;
-                 case 5 : printf("Enter a number : ");
+                 case 5 : printf("Enter the Divident and Divisor: \n");
+                          scanf("%f%f",&x,&y);
+                          e=fmod(x,y);
+                          printf("Remainder = %f",e);
+                          break;
+                 case 6 : printf("Enter a number : ");
                           scanf("%f",&x);
                           c=x*x;
                           printf("Square of %f = %f",x,c);
                           break;
-                 case 6 : printf("Enter a number : ");
+                 case 7 : printf("Enter a number : ");
                           scanf("%f",&x);
                           printf("Square Root of %f = %f",x,sqrt(x));
                           break;
-                 case 7 : printf("Enter a number : ");
+                 case 8 : printf("Enter a number : ");
                           scanf("%f",&x);
                           c=x*x*x;
                           printf("Cube of %f = %f",x,c);
                           break;
-                 case 8 : printf("Enter a number : ");
+                 case 9 : printf("Enter a number : ");
                           scanf("%f",&x);
                           printf("Cube Root of %f = %f",x,cbrt(x));
                           break;
-                 case 9 : printf("Enter a number : ");
+                 case 10 : printf("Enter a number : ");
                           scanf("%f",&x);
                           if(x==0)
                           {
-                              printf("Reciprocal of zero is undefined");
+                              printf("MATH ERROR!\n");
+                              printf("Please enter a number other than zero\n");
                           }
                           else
                           {

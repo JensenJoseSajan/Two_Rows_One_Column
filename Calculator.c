@@ -150,15 +150,20 @@ int main()
               printf("10. Inverse of Cotangent of angle\n");
               printf("11. Inverse of Secant of angle\n");
               printf("12. Inverse of Cosecant of angle\n");
-        
+
+              //inputting angle from user
               printf("Enter the angle in degrees: ");
               scanf("%lf", &ang);
-              rad=0.01745329*ang; //the angle is converted to radians as trigonometric and inverse trigonometric functions in 'math.h' header file only works with radian measures
+              rad=0.01745329*ang; 
+              //the angle is converted to radians as trigonometric and inverse trigonometric functions in 'math.h' header file only works with radian measures
+              
+              //user chooses their required choice of operation
               printf("\nChoose any function: ");
-              scanf("%d",&T);
+              scanf("%d", &T);
 
-              printf ("\n");
-              for (star=32; star > 0; star--) //line break
+              printf("\n");
+              //line break
+              for (star=32; star > 0; star--) 
               {
                  printf ("* * ");
               }

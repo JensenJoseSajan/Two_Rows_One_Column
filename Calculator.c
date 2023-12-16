@@ -193,35 +193,35 @@ int main()
                         break;
                            
                case 8:
-                        printf("Enter the angle in degrees: ");
+                        printf("Enter the aarc angle: ");
                         scanf("%lf",&x);
                         c=acos(x); 
                         printf("Inverse of Cosine of the angle: %f", c);
                         break;
 
                case 9:
-                        printf("Enter the angle in degrees: ");
+                        printf("Enter the arc angle: ");
                         scanf("%lf",&ang);
                         c=atan(ang); 
                         printf("Inverse of Tangent of the angle: %f", c);
                         break;
 
                case 10:
-                        printf("Enter the angle in degrees: ");
+                        printf("Enter the arc angle: ");
                         scanf("%lf",&x);
                         c=1/atan(x); 
                         printf("Inverse of Cotangent of the angle: %f", c);
                         break;
 
                case 11:
-                        printf("Enter the angle in degrees: ");
+                        printf("Enter the arc angle: ");
                         scanf("%lf",&x);
                         c=1/acos(x);    
                         printf("Inverse of Secant of the angle: %f", c);
                         break;
 
                case 12:
-                        printf("Enter the angle in degrees: ");
+                        printf("Enter the aarc angle: ");
                         scanf("%lf",&x);
                         c=1/asin(x); 
                         printf("Inverse of Cosecant of the angle: %f", c);

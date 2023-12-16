@@ -193,7 +193,7 @@ int main()
                         break;
                            
                case 8:
-                        printf("Enter the aarc angle: ");
+                        printf("Enter the arc angle: ");
                         scanf("%lf",&x);
                         tr=acos(x); 
                         printf("Inverse of Cosine of the angle: %f", tr);
@@ -221,7 +221,7 @@ int main()
                         break;
 
                case 12:
-                        printf("Enter the aarc angle: ");
+                        printf("Enter the arc angle: ");
                         scanf("%lf",&x);
                         tr=1/asin(x); 
                         printf("Inverse of Cosecant of the angle: %f", tr);

@@ -153,8 +153,8 @@ int main()
         
               printf("Enter the angle in degrees : ");
               scanf("%lf",&ang);
-              rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
-              printf("\nChoose an Function : ");
+              rad=0.01745329*ang; //the angle is converted to radians as trigonometric and inverse trigonometric functions in 'math.h' header file only works with radian measures
+              printf("\nChoose any function: ");
               scanf("%d",&T);
 
               printf ("\n");

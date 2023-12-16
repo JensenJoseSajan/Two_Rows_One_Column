@@ -9,7 +9,7 @@ int main()
    int A,B,M,T; //used for switches
    int num,a,n,r,per,comb,f,i,z;
    float x,y,c=0,d=1,e;
-   double ang,rad; //ang is to be inputed by the user, rad is the radian value of the angle
+   double ang,rad,tr; //ang is to be inputed by the user, rad is the radian value of the angle
 
    for (star=32; star > 0; star--) //line break
    {
@@ -171,31 +171,68 @@ int main()
      
               switch(T)
               {
-               case 1 : 
+               case 1 :
                        break;
+
                case 2 : 
                        break;
+
                case 3 :
                        break;
+
                case 4:
                         break;
+
                case 5:
                         break;
+
                case 6:
                         break;
-               case 7:
+
+               case 7: 
+                        printf("Enter the arc angle: ");
+                        scanf("%lf",&ang);
+                        c=asin(ang);
+                        printf("Inverse of Sine of the angle: %lf", c); 
                         break;
+                           
                case 8:
+                        printf("Enter the angle in degrees: ");
+                        scanf("%lf",&x);
+                        c=acos(x); 
+                        printf("Inverse of Cosine of the angle: %f", c);
                         break;
+
                case 9:
+                        printf("Enter the angle in degrees: ");
+                        scanf("%lf",&ang);
+                        c=atan(ang); 
+                        printf("Inverse of Tangent of the angle: %f", c);
                         break;
+
                case 10:
+                        printf("Enter the angle in degrees: ");
+                        scanf("%lf",&x);
+                        c=1/atan(x); 
+                        printf("Inverse of Cotangent of the angle: %f", c);
                         break;
+
                case 11:
+                        printf("Enter the angle in degrees: ");
+                        scanf("%lf",&x);
+                        c=1/acos(x);    
+                        printf("Inverse of Secant of the angle: %f", c);
                         break;
+
                case 12:
+                        printf("Enter the angle in degrees: ");
+                        scanf("%lf",&x);
+                        c=1/asin(x); 
+                        printf("Inverse of Cosecant of the angle: %f", c);
                         break;
-               default: printf("Invalid menu number");
+
+               default: 
+                        printf("Invalid menu number");
               }
      //End of Snith's and Affan's Part
 

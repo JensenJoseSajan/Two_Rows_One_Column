@@ -138,18 +138,18 @@ int main()
      //End of Dev Darsh's Part  
         
      //Trigonometric Functions //Snith and Affan's Part
-     case 2 : printf("1. sine Function\n");
-              printf("2. cosine Function\n");
-              printf("3. tangent Function\n");
-              printf("4. cotangent Function\n");
-              printf("5. secant Function\n");
-              printf("6. cosecant Function\n");
-              printf("7. sine inverse Function\n");
-              printf("8. cosine inverse Function\n");
-              printf("9. tangent inverse Function\n");
-              printf("10. cotangent inverse Function\n");
-              printf("11. secant inverse Function\n");
-              printf("12. cosecant inverse Function\n");
+     case 2 : printf("1. Sine of the angle\n");
+              printf("2. Cosine of the angle\n");
+              printf("3. Tangent of the angle\n");
+              printf("4. Cotangent of the angle\n");
+              printf("5. Secant of the angle\n");
+              printf("6. Cosecant of the angle\n");
+              printf("7. Inverse of Sine of angle\n");
+              printf("8. Inverse of Cosine of angle\n");
+              printf("9. Inverse of Tangent of angle\n");
+              printf("10. Inverse of Cotangent of angle\n");
+              printf("11. Inverse of Secant of angle\n");
+              printf("12. Inverse of Cosecant of angle\n");
         
               printf("Enter the angle in degrees : ");
               scanf("%lf",&ang);

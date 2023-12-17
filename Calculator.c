@@ -93,32 +93,29 @@ int main()
                  case 4 : printf("Enter the Divident and Divisor : \n");
                           scanf("%f%f",&x,&y);
                           c=x/y;
-                          printf("Quotient = %f",c);
-                          break;
-                 case 5 : printf("Enter the Divident and Divisor: \n");
-                          scanf("%f%f",&x,&y);
                           e=fmod(x,y);
+                          printf("Quotient = %f",c);
                           printf("Remainder = %f",e);
                           break;
-                 case 6 : printf("Enter a number : ");
+                 case 5 : printf("Enter a number : ");
                           scanf("%f",&x);
                           c=x*x;
                           printf("Square of %f = %f",x,c);
                           break;
-                 case 7 : printf("Enter a number : ");
+                 case 6 : printf("Enter a number : ");
                           scanf("%f",&x);
                           printf("Square Root of %f = %f",x,sqrt(x));
                           break;
-                 case 8 : printf("Enter a number : ");
+                 case 7 : printf("Enter a number : ");
                           scanf("%f",&x);
                           c=x*x*x;
                           printf("Cube of %f = %f",x,c);
                           break;
-                 case 9 : printf("Enter a number : ");
+                 case 8 : printf("Enter a number : ");
                           scanf("%f",&x);
                           printf("Cube Root of %f = %f",x,cbrt(x));
                           break;
-                 case 10 : printf("Enter a number : ");
+                 case 9 : printf("Enter a number : ");
                           scanf("%f",&x);
                           if(x==0)
                           {
@@ -131,8 +128,8 @@ int main()
                               printf("Reciprocal of %f = %f",x,c);
                           }
                           break;
-                 default : printf("Invalid Menu Number");
-                           break;
+                 default: printf("Invalid Menu Number");
+                          break;
               }
               break;
      //End of Dev Darsh's Part  
@@ -151,14 +148,13 @@ int main()
               printf("11. Inverse of Secant of angle\n");
               printf("12. Inverse of Cosecant of angle\n");
 
-               //the angle is converted to radians as trigonometric and inverse trigonometric functions in 'math.h' header file only works with radian measures
-              
-              //user chooses their required choice of operation
-              printf("\nChoose any function: ");
+              printf("Enter the angle in degrees : ");
+              scanf("%lf",&ang);
+              rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
+              printf("\nChoose any function: ");//user chooses their required choice of operation
               scanf("%d", &T);
 
-              printf("\n");
-              //line break
+              printf("\n"); //line break
               for (star=32; star > 0; star--) 
               {
                  printf ("* * ");
@@ -167,68 +163,53 @@ int main()
      
               switch(T)
               {
-               case 1 :
+                 case 1 :
+                         break;
+
+                 case 2 : 
                        break;
 
-               case 2 : 
-                       break;
+                 case 3 :
+                         break;
 
-               case 3 :
-                       break;
-
-               case 4:
-                        break;
-
-               case 5:
-                        break;
-
-               case 6:
-                        break;
-
-               case 7: 
-                        printf("Enter the arc angle: ");
-                        scanf("%lf",&ang);
-                        tr=asin(ang);
-                        printf("Inverse of Sine of the angle: %lf", tr); 
-                        break;
-                           
-               case 8:
-                        printf("Enter the arc angle: ");
-                        scanf("%lf",&x);
-                        tr=acos(x); 
-                        printf("Inverse of Cosine of the angle: %f", tr);
-                        break;
-
-               case 9:
-                        printf("Enter the arc angle: ");
-                        scanf("%lf",&ang);
-                        tr=atan(ang); 
-                        printf("Inverse of Tangent of the angle: %f", tr);
-                        break;
-
-               case 10:
-                        printf("Enter the arc angle: ");
-                        scanf("%lf",&x);
-                        tr=1/atan(x); 
-                        printf("Inverse of Cotangent of the angle: %f", tr);
-                        break;
-
-               case 11:
-                        printf("Enter the arc angle: ");
-                        scanf("%lf",&x);
-                        tr=1/acos(x);    
-                        printf("Inverse of Secant of the angle: %f", tr);
-                        break;
-
-               case 12:
-                        printf("Enter the arc angle: ");
-                        scanf("%lf",&x);
-                        tr=1/asin(x); 
-                        printf("Inverse of Cosecant of the angle: %f", tr);
-                        break;
-
-               default: 
-                        printf("Invalid menu number");
+                 case 4 :
+                          break;
+                 case 5 :
+                          break;
+                 case 6 :
+                          break;
+                 case 7 : printf("Enter the arc angle: ");
+                          scanf("%lf",&ang);
+                          tr=asin(ang);
+                          printf("Inverse of Sine of the angle: %lf", tr);
+                          break;
+                 case 8 : printf("Enter the arc angle: ");
+                          scanf("%lf",&x);
+                          tr=acos(x);
+                          printf("Inverse of Cosine of the angle: %f", tr);
+                          break;
+                 case 9 : printf("Enter the arc angle: ");
+                          scanf("%lf",&ang);
+                          tr=atan(ang); 
+                          printf("Inverse of Tangent of the angle: %f", tr);
+                          break;
+                 case 10: printf("Enter the arc angle: ");
+                          scanf("%lf",&x);
+                          tr=1/atan(x); 
+                          printf("Inverse of Cotangent of the angle: %f", tr);
+                          break;
+                 case 11: printf("Enter the arc angle: ");
+                          scanf("%lf",&x);
+                          tr=1/acos(x);    
+                          printf("Inverse of Secant of the angle: %f", tr);
+                          break;
+                 case 12: printf("Enter the arc angle: ");
+                          scanf("%lf",&x);
+                          tr=1/asin(x); 
+                          printf("Inverse of Cosecant of the angle: %f", tr);
+                          break;
+                 default: printf("Invalid menu number");
+                          break;
               }
      //End of Snith's and Affan's Part
 
@@ -289,8 +270,8 @@ int main()
                              }
                           }
                  case 3 : 
-                 default : printf("Invalid Menu Number");
-                           break;
+                 default: printf("Invalid Menu Number");
+                          break;
               }
      //End of Niranjan's Part
 
@@ -310,8 +291,8 @@ int main()
 
               }
      //End of Jensen and Raaj's Part
-     default : printf("Invalid Menu Number");
-               break; 
+     default: printf("Invalid Menu Number");
+              break; 
    }
    
    return 0;

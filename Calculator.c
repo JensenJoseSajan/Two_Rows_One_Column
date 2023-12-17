@@ -163,20 +163,41 @@ int main()
      
               switch(T)
               {
-                 case 1 :
-                         break;
-
-                 case 2 : 
-                       break;
-
-                 case 3 :
-                         break;
-
-                 case 4 :
+                 case 1 : printf("Enter the angle in degrees: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=sin(rad); 
+                          printf("Sine of the angle: %f", tr);
                           break;
-                 case 5 :
+                 case 2 : printf("Enter the angle in degrees: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=cos(rad); 
+                          printf("Cosine of the angke: %f", tr);
                           break;
-                 case 6 :
+                 case 3 : printf("Enter the angle in degrees: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*x;
+                          tr=tan(rad); 
+                          printf("Tangent of the angle: %f", tr);
+                          break;
+                 case 4 : printf("Enter the angle in degrees: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=1/tan(rad); 
+                          printf("Cotangent of the angle: %f", tr); 
+                          break;
+                 case 5 : printf("Enter the angle in degrees: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=1/cos(rad); 
+                        printf("Secant of the angle: %f", tr);
+                          break;
+                 case 6 : printf("Enter the angle in degrees: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=1/sin(rad); 
+                          printf("Cosecant of the angle: %f", tr);
                           break;
                  case 7 : printf("Enter the arc angle: ");
                           scanf("%lf",&ang);

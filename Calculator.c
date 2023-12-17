@@ -6,7 +6,7 @@ int CP(int);
 int main()
 {
    int star;   //used for line breaks
-   int A,B,M,T; //used for switches
+   int A,B,M,F,T; //used for switches
    int num,a,n,r,per,comb,f,i,z;
    float x,y,c=0,d=1,e;
    double ang,rad,tr; //ang is to be inputed by the user, rad is the radian value of the angle
@@ -163,71 +163,71 @@ int main()
      
               switch(T)
               {
-                 case 1 : printf("Enter the angle in degrees: ");
+                 case 1 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=sin(rad); 
-                          printf("Sine of the angle: %f", tr);
+                          printf("Sine of the angle : %f", tr);
                           break;
-                 case 2 : printf("Enter the angle in degrees: ");
+                 case 2 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=cos(rad); 
-                          printf("Cosine of the angke: %f", tr);
+                          printf("Cosine of the angle : %f", tr);
                           break;
-                 case 3 : printf("Enter the angle in degrees: ");
+                 case 3 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*x;
                           tr=tan(rad); 
-                          printf("Tangent of the angle: %f", tr);
+                          printf("Tangent of the angle : %f", tr);
                           break;
-                 case 4 : printf("Enter the angle in degrees: ");
+                 case 4 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=1/tan(rad); 
-                          printf("Cotangent of the angle: %f", tr); 
+                          printf("Cotangent of the angle : %f", tr); 
                           break;
-                 case 5 : printf("Enter the angle in degrees: ");
+                 case 5 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=1/cos(rad); 
-                        printf("Secant of the angle: %f", tr);
+                        printf("Secant of the angle : %f", tr);
                           break;
-                 case 6 : printf("Enter the angle in degrees: ");
+                 case 6 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=1/sin(rad); 
-                          printf("Cosecant of the angle: %f", tr);
+                          printf("Cosecant of the angle : %f", tr);
                           break;
-                 case 7 : printf("Enter the arc angle: ");
+                 case 7 : printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=asin(ang);
-                          printf("Inverse of Sine of the angle: %lf", tr);
+                          printf("Inverse of Sine of the angle : %lf", tr);
                           break;
-                 case 8 : printf("Enter the arc angle: ");
+                 case 8 : printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=acos(ang);
-                          printf("Inverse of Cosine of the angle: %f", tr);
+                          printf("Inverse of Cosine of the angle : %f", tr);
                           break;
-                 case 9 : printf("Enter the arc angle: ");
+                 case 9 : printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=atan(ang); 
-                          printf("Inverse of Tangent of the angle: %f", tr);
+                          printf("Inverse of Tangent of the angle : %f", tr);
                           break;
-                 case 10: printf("Enter the arc angle: ");
+                 case 10: printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=1/atan(ang); 
-                          printf("Inverse of Cotangent of the angle: %f", tr);
+                          printf("Inverse of Cotangent of the angle : %f", tr);
                           break;
-                 case 11: printf("Enter the arc angle: ");
+                 case 11: printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=1/acos(ang);    
-                          printf("Inverse of Secant of the angle: %f", tr);
+                          printf("Inverse of Secant of the angle : %f", tr);
                           break;
-                 case 12: printf("Enter the arc angle: ");
+                 case 12: printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=1/asin(ang); 
-                          printf("Inverse of Cosecant of the angle: %f", tr);
+                          printf("Inverse of Cosecant of the angle : %f", tr);
                           break;
                  default: printf("Invalid menu number");
                           break;
@@ -239,7 +239,7 @@ int main()
               printf("2. PERMUTATION\n");
               printf("3. COMBINATION\n");
               printf("Enter an Operation : ");
-              scanf("%d",M);
+              scanf("%d",F);
 
               printf ("\n");
               for (star=32; star > 0; star--) //line break
@@ -248,49 +248,14 @@ int main()
               }
               printf ("\n\n");
               
-              switch(M)
+              switch(F)
               {
-                 case 1 : printf("Enter the number:");
-                          scanf("%d",&num);
-                          a=fact(n);
-                          printf("Factorial of the given number=%d",a);
-                          int fact(int u)
-                          {
-                             int F;
-                             if(u==0)
-                             {
-                                return 1;
-                             }
-                             else
-                             {
-                                F=u*fact(u-1);
-                                return F;
-                             }
+                 case 1 : 
                           break;
-                          }
-                 case 2 : printf("Enter the value of n : ");
-                          scanf("%d",&n);
-                          printf("Enter the value of r : ");
-                          scanf("%d",&r);
-                          f=CP(n);
-                          per=CP(n)/CP(n-r);
-                          comb=per/CP(r);
-                          printf("Permutation = %d",per);
-                          printf("Combination = %d",comb);
-                          int CP(int v);
-                          {
-                             int F;
-                             if(v==0)
-                             {
-                                return 1;
-                             }
-                             else
-                             {
-                                F=y*CP(v-1);
-                                return F;
-                             }
-                          }
+                 case 2 : 
+                          break;
                  case 3 : 
+                          break;
                  default: printf("Invalid Menu Number");
                           break;
               }

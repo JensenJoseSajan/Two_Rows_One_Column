@@ -76,7 +76,7 @@ int main()
               printf("8. CUBE ROOT\n");
               printf("9. RECIPROCAL\n");
               printf("10. POWER\n");
-              printf("\nChoose an Operation: ");
+              printf("\nChoose a Function : ");
               scanf("%d",&B);
                
               printf ("\n");

@@ -53,6 +53,7 @@ int main()
               printf("7. CUBE\n");
               printf("8. CUBE ROOT\n");
               printf("9. RECIPROCAL\n");
+              printf("10. POWER\n");
               printf("\nChoose an Operation : ");
               scanf("%d",&B);
                
@@ -127,6 +128,12 @@ int main()
                               c=1/x;
                               printf("Reciprocal of %f = %f",x,c);
                           }
+                          break;
+                 case 10: printf("Enter the base: \n");
+                          scanf("%f",&x);
+                          printf("Enter the exponent: \n");
+                          scanf("%f",&y);
+                          printf("%f^%f = %f",x,y,pow(x,y));
                           break;
                  default: printf("Invalid Menu Number");
                           break;

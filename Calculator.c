@@ -7,8 +7,8 @@ int main()
 {
    int star;   //used for line breaks
    int A,B,M,F,T; //used for switches
-   int num,a,n,r,per,comb,f,i,z;
-   float x,y,c=0,d=1,e;
+   int num,a,m,n,r,sum=0,r1,r2,c1,c2,per,comb,f,i,j,k,d,z;
+   float x,y,c=0,d=1,e,norm;
    double ang,rad,tr; //ang is to be inputed by the user, rad is the radian value of the angle
 
    for (star=32; star > 0; star--) //line break
@@ -151,7 +151,7 @@ int main()
               printf("Enter the angle in degrees : ");
               scanf("%lf",&ang);
               rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
-              printf("\nChoose any function: ");//user chooses their required choice of operation
+              printf("Choose a Function : ");//user chooses their required choice of operation
               scanf("%d", &T);
 
               printf("\n"); //line break
@@ -238,7 +238,7 @@ int main()
      case 3 : printf("1. FACTORIAL\n");
               printf("2. PERMUTATION\n");
               printf("3. COMBINATION\n");
-              printf("Enter an Operation : ");
+              printf("Choose an Operation : ");
               scanf("%d",F);
 
               printf ("\n");
@@ -262,9 +262,63 @@ int main()
      //End of Niranjan's Part
 
      //Matrix Functions //Jensen and Raaj's Part
-     case 4 : 
+     case 4 : printf("Enter the size of the matrix A : ");
+              scanf("%d%d", &m, &n);
+              int a[m][n], b[m][n], c[m][n], tr[i][j];
+              printf("\n");
+              for(i=0; i<m; i++) //To read and display the values of the Matrix A
+              {
+                  for(j=0; j<n; j++)
+                  {
+                     printf("A[%d][%d] = ", i, j);
+                     scanf("%d", &a[i][j]);
+                  }
+              }
+              printf("\n");
+              printf("Matrix A \n");
+              for(i=0; i<m; i++)
+              {
+                  for(j=0; j<n; j++)
+                  {
+                     printf("%d\t", a[i][j]);
+                  }
+               
+              printf ("\n");
+              for (star=32; star > 0; star--) //line break
+              {
+                  printf ("* * ");
+              }
+              printf ("\n\n");
 
-        
+              printf("1. ADDITION\n");
+              printf("2. SUBTRACTION\n");
+              printf("3. MULTIPLICATION\n");
+              printf("4. TRACE\n");
+              printf("5. TRANSPOSE\n");
+              printf("6. SYMETRIC OR NOT\n");
+              printf("7. NORM\n");
+              printf("Choose an Operation : ");
+              scanf("%d",M);
+              if(0<M<4)
+              {
+                  for(i=0; i<m; i++) //To read and display the values of the Matrix B
+                  {
+                     for(j=0; j<n; j++)
+                     {
+                        printf("A[%d][%d] = ", i, j);
+                        scanf("%d", &b[i][j]);
+                     }
+                  }
+                  printf("\n");
+                  printf("Matrix B \n");
+                  for(i=0; i<m; i++)
+                  {
+                     for(j=0; j<n; j++)
+                     {
+                        printf("%d\t", b[i][j]);
+                     }
+                  }
+
               printf ("\n");
               for (star=32; star > 0; star--) //line break
               {
@@ -272,9 +326,106 @@ int main()
               }
               printf ("\n\n");
 
-              switch()
+              switch(M)
               {
-
+                 case 1 : printf("The sum of the matrices is :- \n");
+                          for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 c[i][j] = a[i][j] + b[i][j];
+                                 printf("%d\t", c[i][j]);
+                              }
+                              printf("\n");
+                          }
+                         break;
+                 case 2 : printf("The difference of the matrices is :- \n");
+                          for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 c[i][j] = a[i][j] - b[i][j];
+                                 printf("%d\t", c[i][j]);
+                              }
+                              printf("\n");
+                          }
+                         break;
+                 case 3 : printf("Enter the order of Matrix A and Matrix B : ");
+                          scanf("%d %d %d %d", &r1, &c1, &r2, &c2);
+                          printf("\n");
+                          if(c1==r2)
+                          {
+                              printf("The product of the matrices is :- \n");
+                              for(i=0; i<r1; i++)
+                              {
+                                 for(j=0; j<c2; j++)
+                                 {
+                                    for(k=0; k<c1; k++)
+                                    {
+                                       c[i][j] += a[i][k] * b[k][j];
+                                    }
+                                    printf("%d\t", c[i][j]);
+                                 }
+                                 printf("\n");
+                              }
+                          }
+                          else
+                          {
+                              printf("MATH ERROR!!");
+                          }
+                          break;
+                 case 4 : for(i=0;i<m;i++)
+                          {
+                              sum = sum + a[i][i];
+                          }
+                          printf("\n");
+                          printf("Trace of the matrix = %d",sum);
+                          break;
+                 case 5 : printf("The transpose of matrix A is :- \n");
+                          for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 tr[i][j] = a[j][i];
+                                 printf("%d\t", tr[i][j]);
+                              }
+                          printf("\n");
+                          }
+                          break;
+                 case 6 : for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 tr[i][j] = a[j][i];
+                                 printf("%d\t", tr[i][j]);
+                              }
+                          printf("\n");
+                          }
+                          if(tr[i][j] == a[j][i])
+                          {
+                              printf("MATRIX A is a Symmetric Matrix.");
+                          }
+                          else if(tr[i][j] == -(a[j][i]))
+                          {
+                              printf("MATRIX A is a Skew Symmetric Matrix.");
+                          }
+                          else
+                          {
+                              printf("MATRIX A is not a Symmetric Matrix.");
+                          }
+                          break;
+                 case 7 : for(i=0;i<m;i++)
+                          {
+                              for(j=0;j<n;j++)
+                              {
+                                 d+=a[i][j]*a[i][j];
+                              }
+                          }
+                          norm=sqrt(d);
+                          printf("The norm of the matrix = %f",norm);
+                          break;
+                 default: printf("Invalid Menu Number");
+                          break;        
               }
      //End of Jensen and Raaj's Part
      default: printf("Invalid Menu Number");

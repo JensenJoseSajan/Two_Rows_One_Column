@@ -1,13 +1,35 @@
 //Program for a Calculator (with basic functions and Matrix calculation)
 #include <stdio.h>
 #include <math.h>
-int fact(int);
-int CP(int);
+int factorial(int);
+int permutations(int,int);
+int combinations(int,int);
+int factorial(int n)
+{
+    if (n == 0 || n == 1)
+    return 1;
+    else
+    return n * factorial(n - 1);
+}
+int permutations(int n, int r)
+{
+    if (n < r)
+    return 0;
+    else
+    return factorial(n) / factorial(n - r);
+}
+int combinations(int n, int r)
+{
+    if (n < r)
+    return 0;
+    else
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}
 int main()
 {
    int star;   //used for line breaks
    int A,B,M,F,T; //used for switches
-   int num,a,m,n,r,sum=0,r1,r2,c1,c2,per,comb,f,i,j,k,z;
+   int num,a,m,n,r,sum=0,r1,r2,c1,c2,p,c,f,i,j,k,z;
    float x,y,c=0,d=1,e,norm;
    double ang,rad,tr; //ang is to be inputed by the user, rad is the radian value of the angle
 
@@ -54,7 +76,7 @@ int main()
               printf("8. CUBE ROOT\n");
               printf("9. RECIPROCAL\n");
               printf("10. POWER\n");
-              printf("\nChoose an Operation : ");
+              printf("\nChoose an Operation: ");
               scanf("%d",&B);
                
               printf ("\n");
@@ -245,7 +267,7 @@ int main()
      case 3 : printf("1. FACTORIAL\n");
               printf("2. PERMUTATION\n");
               printf("3. COMBINATION\n");
-              printf("Choose an Operation : ");
+              printf("Choose a Function : ");
               scanf("%d",F);
 
               printf ("\n");
@@ -257,15 +279,29 @@ int main()
               
               switch(F)
               {
-                 case 1 : 
+                 case 1 : printf("Enter the value of n : \n");
+                          scanf("%d",&n);
+                          result = factorial(n);
+                          printf("Factorial = %d\n",result);
                           break;
-                 case 2 : 
+                 case 2 : printf("Enter the value of n : \n");
+                          scanf("%d",&n); 
+                          printf("Enter the value of r : \n");
+                          scanf("%d",&r);
+                          result = permutations(n, r);
+                          printf("Permutation = %d\n",result);
                           break;
-                 case 3 : 
+                 case 3 : printf("Enter the value of n : \n");
+                          scanf("%d",&n); 
+                          printf("Enter the value of r : \n");
+                          scanf("%d",&r);
+                          result=combinations(n, r);
+                          printf("Combination = %d\n",result);
                           break;
                  default: printf("Invalid Menu Number");
                           break;
               }
+              break;
      //End of Niranjan's Part
 
      //Matrix Functions //Jensen and Raaj's Part

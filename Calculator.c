@@ -41,7 +41,7 @@ int main()
    int A,B,M,F,T; //used for switches
    int num,a,m,n,r,sum=0,r1,r2,c1,c2,result,i,j,k,z;
    float x,y,c=0,d=1,e,norm;
-   double ang,rad,tr; //ang is to be inputed by the user, rad is the radian value of the angle
+   double ang,rad,con,tr; //ang is to be inputed by the user, rad is the radian value of the angle
 
    line_break(st); //line break
 
@@ -205,22 +205,28 @@ int main()
                           printf("Cosecant of the angle : %f", tr);
                           break;
                  case 7 : tr=asin(ang);
-                          printf("Inverse of Sine of the angle : %lf", tr);
+                          con=tr*57.296;
+                          printf("Inverse of Sine of the angle : %lf", con);
                           break;
                  case 8 : tr=acos(ang);
-                          printf("Inverse of Cosine of the angle : %f", tr);
+                          con=tr*57.296;
+                          printf("Inverse of Cosine of the angle : %f", con);
                           break;
                  case 9 : tr=atan(ang); 
-                          printf("Inverse of Tangent of the angle : %f", tr);
+                          con=tr*57.296;
+                          printf("Inverse of Tangent of the angle : %f", con);
                           break;
                  case 10: tr=1/atan(ang); 
-                          printf("Inverse of Cotangent of the angle : %f", tr);
+                          con=tr*57.296;
+                          printf("Inverse of Cotangent of the angle : %f", con);
                           break;
                  case 11: tr=1/acos(ang);    
-                          printf("Inverse of Secant of the angle : %f", tr);
+                          con=tr*57.296;
+                          printf("Inverse of Secant of the angle : %f", con);
                           break;
                  case 12: tr=1/asin(ang); 
-                          printf("Inverse of Cosecant of the angle : %f", tr);
+                          con=tr*57.296;
+                          printf("Inverse of Cosecant of the angle : %f", con);
                           break;
                  default: printf("Invalid menu number");
                           break;

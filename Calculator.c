@@ -49,7 +49,7 @@ int main()
    printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'.\n");
    printf("In this calculator, you can run programs like Basic Algebra, Trigonometric Functions, Factorial Functions and Matrix Functions.\n\n");
 
-   line_break(st) //line break
+   line_break(st); //line break
    printf ("\n");
 
    printf("1. BASIC FUNCTIONS\n");
@@ -60,7 +60,7 @@ int main()
    scanf("%d",&A);
 
    printf ("\n");
-   line_break(st) //line break
+   line_break(st); //line break
    printf ("\n");
     
    switch(A)
@@ -80,7 +80,7 @@ int main()
               scanf("%d",&B);
                
               printf ("\n");
-              line_break(st) //line break
+              line_break(st); //line break
               printf ("\n");
                
               switch(B)
@@ -181,7 +181,7 @@ int main()
               scanf("%d", &T);
 
               printf("\n"); 
-              line_break(st) //line break
+              line_break(st); //line break
               printf ("\n");
      
               switch(T)
@@ -235,7 +235,7 @@ int main()
               scanf("%d",F);
 
               printf ("\n");
-              line_break(st) //line break
+              line_break(st); //line break
               printf ("\n");
               
               switch(F)
@@ -321,7 +321,7 @@ int main()
                   }
 
               printf ("\n");
-              line_break(st)//line break
+              line_break(st);//line break
               printf ("\n");
 
               switch(M)

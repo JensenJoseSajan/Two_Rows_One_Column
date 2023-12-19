@@ -37,7 +37,7 @@ int combinations(int n, int r)
 }
 int main()
 {
-   int star;   //used for line breaks
+   int st;   //used for line breaks
    int A,B,M,F,T; //used for switches
    int num,a,m,n,r,sum=0,r1,r2,c1,c2,result,i,j,k,z;
    float x,y,c=0,d=1,e,norm;

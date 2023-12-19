@@ -1,9 +1,19 @@
 //Program for a Calculator (with basic functions and Matrix calculation)
 #include <stdio.h>
 #include <math.h>
+void line_break(int);
 int factorial(int);
 int permutations(int,int);
 int combinations(int,int);
+void line_break(int so) //used for line break
+{
+    int star;
+    for(star=32; star>0; star--)
+    {
+        printf("* * ");
+    }
+    printf("\n");
+}
 int factorial(int n)
 {
     if (n == 0 || n == 1)
@@ -27,27 +37,20 @@ int combinations(int n, int r)
 }
 int main()
 {
-   int star;   //used for line breaks
+   int st;   //used for line breaks
    int A,B,M,F,T; //used for switches
    int num,a,m,n,r,sum=0,r1,r2,c1,c2,result,i,j,k,z;
    float x,y,c=0,d=1,e,norm;
    double ang,rad,tr; //ang is to be inputed by the user, rad is the radian value of the angle
 
-   for (star=32; star > 0; star--) //line break
-   {
-       printf ("* * ");
-   }
-   printf ("\n");
+   line_break(st); //line break
 
    //The Welcoming statement.
    printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'.\n");
-   printf("In this calculator, you can run programs like Basic Algebra, Trignometric Functions, Factorial Functions and Matrix Functions.\n\n");
+   printf("In this calculator, you can run programs like Basic Algebra, Trigonometric Functions, Factorial Functions and Matrix Functions.\n\n");
 
-   for (star=32; star > 0; star--) //line break
-   {
-       printf ("* * ");
-   }
-   printf ("\n\n");
+   line_break(st); //line break
+   printf ("\n");
 
    printf("1. BASIC FUNCTIONS\n");
    printf("2. TRIGONOMETRIC FUNCTIONS\n");
@@ -57,11 +60,8 @@ int main()
    scanf("%d",&A);
 
    printf ("\n");
-   for (star=32; star > 0; star--) //line break
-   {
-      printf ("* * ");
-   }
-   printf ("\n\n");
+   line_break(st); //line break
+   printf ("\n");
     
    switch(A)
    {
@@ -80,11 +80,8 @@ int main()
               scanf("%d",&B);
                
               printf ("\n");
-              for (star=32; star > 0; star--) //line break
-              {
-                 printf ("* * ");
-              }
-              printf ("\n\n");
+              line_break(st); //line break
+              printf ("\n");
                
               switch(B)
               {
@@ -183,79 +180,45 @@ int main()
               printf("Choose a Function : ");//user chooses their required choice of operation
               scanf("%d", &T);
 
-              printf("\n"); //line break
-              for (star=32; star > 0; star--) 
-              {
-                 printf ("* * ");
-              }
-              printf ("\n\n");
+              line_break(st); //line break 
+              printf ("\n");
      
               switch(T)
               {
-                 case 1 : printf("Enter the angle in degrees : ");
-                          scanf("%lf",&ang);
-                          rad=0.01745329*ang;
-                          tr=sin(rad); 
+                 case 1 : tr=sin(rad); 
                           printf("Sine of the angle : %f", tr);
                           break;
-                 case 2 : printf("Enter the angle in degrees : ");
-                          scanf("%lf",&ang);
-                          rad=0.01745329*ang;
-                          tr=cos(rad); 
+                 case 2 : tr=cos(rad); 
                           printf("Cosine of the angle : %f", tr);
                           break;
-                 case 3 : printf("Enter the angle in degrees : ");
-                          scanf("%lf",&ang);
-                          rad=0.01745329*x;
-                          tr=tan(rad); 
+                 case 3 : tr=tan(rad); 
                           printf("Tangent of the angle : %f", tr);
                           break;
-                 case 4 : printf("Enter the angle in degrees : ");
-                          scanf("%lf",&ang);
-                          rad=0.01745329*ang;
-                          tr=1/tan(rad); 
+                 case 4 : tr=1/tan(rad); 
                           printf("Cotangent of the angle : %f", tr); 
                           break;
-                 case 5 : printf("Enter the angle in degrees : ");
-                          scanf("%lf",&ang);
-                          rad=0.01745329*ang;
-                          tr=1/cos(rad); 
-                        printf("Secant of the angle : %f", tr);
+                 case 5 : tr=1/cos(rad); 
+                          printf("Secant of the angle : %f", tr);
                           break;
-                 case 6 : printf("Enter the angle in degrees : ");
-                          scanf("%lf",&ang);
-                          rad=0.01745329*ang;
-                          tr=1/sin(rad); 
+                 case 6 : tr=1/sin(rad); 
                           printf("Cosecant of the angle : %f", tr);
                           break;
-                 case 7 : printf("Enter the arc angle : ");
-                          scanf("%lf",&ang);
-                          tr=asin(ang);
+                 case 7 : tr=asin(ang);
                           printf("Inverse of Sine of the angle : %lf", tr);
                           break;
-                 case 8 : printf("Enter the arc angle : ");
-                          scanf("%lf",&ang);
-                          tr=acos(ang);
+                 case 8 : tr=acos(ang);
                           printf("Inverse of Cosine of the angle : %f", tr);
                           break;
-                 case 9 : printf("Enter the arc angle : ");
-                          scanf("%lf",&ang);
-                          tr=atan(ang); 
+                 case 9 : tr=atan(ang); 
                           printf("Inverse of Tangent of the angle : %f", tr);
                           break;
-                 case 10: printf("Enter the arc angle : ");
-                          scanf("%lf",&ang);
-                          tr=1/atan(ang); 
+                 case 10: tr=1/atan(ang); 
                           printf("Inverse of Cotangent of the angle : %f", tr);
                           break;
-                 case 11: printf("Enter the arc angle : ");
-                          scanf("%lf",&ang);
-                          tr=1/acos(ang);    
+                 case 11: tr=1/acos(ang);    
                           printf("Inverse of Secant of the angle : %f", tr);
                           break;
-                 case 12: printf("Enter the arc angle : ");
-                          scanf("%lf",&ang);
-                          tr=1/asin(ang); 
+                 case 12: tr=1/asin(ang); 
                           printf("Inverse of Cosecant of the angle : %f", tr);
                           break;
                  default: printf("Invalid menu number");
@@ -271,11 +234,8 @@ int main()
               scanf("%d",F);
 
               printf ("\n");
-              for (star=32; star > 0; star--) //line break
-              {
-                 printf ("* * ");
-              }
-              printf ("\n\n");
+              line_break(st); //line break
+              printf ("\n");
               
               switch(F)
               {
@@ -327,11 +287,8 @@ int main()
                   }
                
               printf ("\n");
-              for (star=32; star > 0; star--) //line break
-              {
-                  printf ("* * ");
-              }
-              printf ("\n\n");
+              line_break(st); //line break
+              printf ("\n");
 
               printf("1. ADDITION\n");
               printf("2. SUBTRACTION\n");
@@ -363,11 +320,8 @@ int main()
                   }
 
               printf ("\n");
-              for (star=32; star > 0; star--) //line break
-              {
-                 printf ("* * ");
-              }
-              printf ("\n\n");
+              line_break(st); //line break
+              printf ("\n");
 
               switch(M)
               {

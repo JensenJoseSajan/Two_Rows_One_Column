@@ -3,19 +3,9 @@
 #include <math.h>
 int fact(int);
 int CP(int);
-void line_break(int);
-void line_break(int so) //used for line break
-{
-    int star;
-    for(star=32; star > 0; star--)
-    {
-        printf("* * ");
-    }
-    printf("\n");
-}
 int main()
 {
-   int st;   //used for line breaks
+   int star;   //used for line breaks
    int A,B,M,T; //used for switches
    int num,a,n,r,per,comb,f,i,z;
    float x,y,c=0,d=1,e;
@@ -51,7 +41,8 @@ int main()
               printf("7. CUBE\n");
               printf("8. CUBE ROOT\n");
               printf("9. RECIPROCAL\n");
-              printf("\nChoose an Operation : ");
+              printf("10. POWER\n");
+              printf("\nChoose a Function : ");
               scanf("%d",&B);
                
               printf ("\n");
@@ -123,6 +114,12 @@ int main()
                               printf("Reciprocal of %f = %f",x,c);
                           }
                           break;
+                 case 10: printf("Enter the base: \n");
+                          scanf("%f",&x);
+                          printf("Enter the exponent: \n");
+                          scanf("%f",&y);
+                          printf("%f^%f = %f",x,y,pow(x,y));
+                          break;
                  default: printf("Invalid Menu Number");
                           break;
               }
@@ -146,7 +143,7 @@ int main()
               printf("Enter the angle in degrees : ");
               scanf("%lf",&ang);
               rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
-              printf("\nChoose any function: ");//user chooses their required choice of operation
+              printf("Choose a Function : ");//user chooses their required choice of operation
               scanf("%d", &T);
 
               line_break(st);//line break
@@ -154,71 +151,71 @@ int main()
      
               switch(T)
               {
-                 case 1 : printf("Enter the angle in degrees: ");
+                 case 1 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=sin(rad); 
-                          printf("Sine of the angle: %f", tr);
+                          printf("Sine of the angle : %f", tr);
                           break;
-                 case 2 : printf("Enter the angle in degrees: ");
+                 case 2 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=cos(rad); 
-                          printf("Cosine of the angke: %f", tr);
+                          printf("Cosine of the angle : %f", tr);
                           break;
-                 case 3 : printf("Enter the angle in degrees: ");
+                 case 3 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*x;
                           tr=tan(rad); 
-                          printf("Tangent of the angle: %f", tr);
+                          printf("Tangent of the angle : %f", tr);
                           break;
-                 case 4 : printf("Enter the angle in degrees: ");
+                 case 4 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=1/tan(rad); 
-                          printf("Cotangent of the angle: %f", tr); 
+                          printf("Cotangent of the angle : %f", tr); 
                           break;
-                 case 5 : printf("Enter the angle in degrees: ");
+                 case 5 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=1/cos(rad); 
-                        printf("Secant of the angle: %f", tr);
+                        printf("Secant of the angle : %f", tr);
                           break;
-                 case 6 : printf("Enter the angle in degrees: ");
+                 case 6 : printf("Enter the angle in degrees : ");
                           scanf("%lf",&ang);
                           rad=0.01745329*ang;
                           tr=1/sin(rad); 
-                          printf("Cosecant of the angle: %f", tr);
+                          printf("Cosecant of the angle : %f", tr);
                           break;
-                 case 7 : printf("Enter the arc angle: ");
+                 case 7 : printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=asin(ang);
-                          printf("Inverse of Sine of the angle: %lf", tr);
+                          printf("Inverse of Sine of the angle : %lf", tr);
                           break;
-                 case 8 : printf("Enter the arc angle: ");
+                 case 8 : printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=acos(ang);
-                          printf("Inverse of Cosine of the angle: %f", tr);
+                          printf("Inverse of Cosine of the angle : %f", tr);
                           break;
-                 case 9 : printf("Enter the arc angle: ");
+                 case 9 : printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=atan(ang); 
-                          printf("Inverse of Tangent of the angle: %f", tr);
+                          printf("Inverse of Tangent of the angle : %f", tr);
                           break;
-                 case 10: printf("Enter the arc angle: ");
+                 case 10: printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=1/atan(ang); 
-                          printf("Inverse of Cotangent of the angle: %f", tr);
+                          printf("Inverse of Cotangent of the angle : %f", tr);
                           break;
-                 case 11: printf("Enter the arc angle: ");
+                 case 11: printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=1/acos(ang);    
-                          printf("Inverse of Secant of the angle: %f", tr);
+                          printf("Inverse of Secant of the angle : %f", tr);
                           break;
-                 case 12: printf("Enter the arc angle: ");
+                 case 12: printf("Enter the arc angle : ");
                           scanf("%lf",&ang);
                           tr=1/asin(ang); 
-                          printf("Inverse of Cosecant of the angle: %f", tr);
+                          printf("Inverse of Cosecant of the angle : %f", tr);
                           break;
                  default: printf("Invalid menu number");
                           break;
@@ -229,72 +226,202 @@ int main()
      case 3 : printf("1. FACTORIAL\n");
               printf("2. PERMUTATION\n");
               printf("3. COMBINATION\n");
-              printf("Enter an Operation : ");
-              scanf("%d",M);
+              printf("Choose a Function : ");
+              scanf("%d",F);
 
               printf ("\n");
               line_break(st); //line break
               printf ("\n\n");
               
-              switch(M)
+              switch(F)
               {
-                 case 1 : printf("Enter the number:");
-                          scanf("%d",&num);
-                          a=fact(n);
-                          printf("Factorial of the given number=%d",a);
-                          int fact(int u)
-                          {
-                             int F;
-                             if(u==0)
-                             {
-                                return 1;
-                             }
-                             else
-                             {
-                                F=u*fact(u-1);
-                                return F;
-                             }
-                          break;
-                          }
-                 case 2 : printf("Enter the value of n : ");
+                 case 1 : printf("Enter the value of n : \n");
                           scanf("%d",&n);
-                          printf("Enter the value of r : ");
+                          result = factorial(n);
+                          printf("Factorial = %d\n",result);
+                          break;
+                 case 2 : printf("Enter the value of n : \n");
+                          scanf("%d",&n); 
+                          printf("Enter the value of r : \n");
                           scanf("%d",&r);
-                          f=CP(n);
-                          per=CP(n)/CP(n-r);
-                          comb=per/CP(r);
-                          printf("Permutation = %d",per);
-                          printf("Combination = %d",comb);
-                          int CP(int v);
-                          {
-                             int F;
-                             if(v==0)
-                             {
-                                return 1;
-                             }
-                             else
-                             {
-                                F=y*CP(v-1);
-                                return F;
-                             }
-                          }
-                 case 3 : 
+                          result = permutations(n, r);
+                          printf("Permutation = %d\n",result);
+                          break;
+                 case 3 : printf("Enter the value of n : \n");
+                          scanf("%d",&n); 
+                          printf("Enter the value of r : \n");
+                          scanf("%d",&r);
+                          result=combinations(n, r);
+                          printf("Combination = %d\n",result);
+                          break;
                  default: printf("Invalid Menu Number");
                           break;
               }
+              break;
      //End of Niranjan's Part
 
      //Matrix Functions //Jensen and Raaj's Part
-     case 4 : 
+     case 4 : printf("Enter the size of the matrix A : ");
+              scanf("%d%d", &m, &n);
+              int a[m][n], b[m][n], c[m][n], tr[i][j];
+              printf("\n");
+              for(i=0; i<m; i++) //To read and display the values of the Matrix A
+              {
+                  for(j=0; j<n; j++)
+                  {
+                     printf("A[%d][%d] = ", i, j);
+                     scanf("%d", &a[i][j]);
+                  }
+              }
+              printf("\n");
+              printf("Matrix A \n");
+              for(i=0; i<m; i++)
+              {
+                  for(j=0; j<n; j++)
+                  {
+                     printf("%d\t", a[i][j]);
+                  }
+               
+              printf ("\n");
+              for (star=32; star > 0; star--) //line break
+              {
+                  printf ("* * ");
+              }
+              printf ("\n\n");
 
-        
+              printf("1. ADDITION\n");
+              printf("2. SUBTRACTION\n");
+              printf("3. MULTIPLICATION\n");
+              printf("4. TRACE\n");
+              printf("5. TRANSPOSE\n");
+              printf("6. SYMETRIC OR NOT\n");
+              printf("7. NORM\n");
+              printf("Choose an Operation : ");
+              scanf("%d",M);
+              if(0<M<4)
+              {
+                  for(i=0; i<m; i++) //To read and display the values of the Matrix B
+                  {
+                     for(j=0; j<n; j++)
+                     {
+                        printf("A[%d][%d] = ", i, j);
+                        scanf("%d", &b[i][j]);
+                     }
+                  }
+                  printf("\n");
+                  printf("Matrix B \n");
+                  for(i=0; i<m; i++)
+                  {
+                     for(j=0; j<n; j++)
+                     {
+                        printf("%d\t", b[i][j]);
+                     }
+                  }
+
               printf ("\n");
               line_break(st); //line break
               printf ("\n\n");
 
-              switch()
+              switch(M)
               {
-
+                 case 1 : printf("The sum of the matrices is :- \n");
+                          for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 c[i][j] = a[i][j] + b[i][j];
+                                 printf("%d\t", c[i][j]);
+                              }
+                              printf("\n");
+                          }
+                         break;
+                 case 2 : printf("The difference of the matrices is :- \n");
+                          for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 c[i][j] = a[i][j] - b[i][j];
+                                 printf("%d\t", c[i][j]);
+                              }
+                              printf("\n");
+                          }
+                         break;
+                 case 3 : printf("Enter the order of Matrix A and Matrix B : ");
+                          scanf("%d %d %d %d", &r1, &c1, &r2, &c2);
+                          printf("\n");
+                          if(c1==r2)
+                          {
+                              printf("The product of the matrices is :- \n");
+                              for(i=0; i<r1; i++)
+                              {
+                                 for(j=0; j<c2; j++)
+                                 {
+                                    for(k=0; k<c1; k++)
+                                    {
+                                       c[i][j] += a[i][k] * b[k][j];
+                                    }
+                                    printf("%d\t", c[i][j]);
+                                 }
+                                 printf("\n");
+                              }
+                          }
+                          else
+                          {
+                              printf("MATH ERROR!!");
+                          }
+                          break;
+                 case 4 : for(i=0;i<m;i++)
+                          {
+                              sum = sum + a[i][i];
+                          }
+                          printf("\n");
+                          printf("Trace of the matrix = %d",sum);
+                          break;
+                 case 5 : printf("The transpose of matrix A is :- \n");
+                          for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 tr[i][j] = a[j][i];
+                                 printf("%d\t", tr[i][j]);
+                              }
+                          printf("\n");
+                          }
+                          break;
+                 case 6 : for(i=0; i<m; i++)
+                          {
+                              for(j=0; j<n; j++)
+                              {
+                                 tr[i][j] = a[j][i];
+                                 printf("%d\t", tr[i][j]);
+                              }
+                          printf("\n");
+                          }
+                          if(tr[i][j] == a[j][i])
+                          {
+                              printf("MATRIX A is a Symmetric Matrix.");
+                          }
+                          else if(tr[i][j] == -(a[j][i]))
+                          {
+                              printf("MATRIX A is a Skew Symmetric Matrix.");
+                          }
+                          else
+                          {
+                              printf("MATRIX A is not a Symmetric Matrix.");
+                          }
+                          break;
+                 case 7 : for(i=0;i<m;i++)
+                          {
+                              for(j=0;j<n;j++)
+                              {
+                                 d+=a[i][j]*a[i][j];
+                              }
+                          }
+                          norm=sqrt(d);
+                          printf("The norm of the matrix = %f",norm);
+                          break;
+                 default: printf("Invalid Menu Number");
+                          break;        
               }
      //End of Jensen and Raaj's Part
      default: printf("Invalid Menu Number");

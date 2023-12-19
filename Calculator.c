@@ -3,29 +3,31 @@
 #include <math.h>
 int fact(int);
 int CP(int);
+void line_break(int);
+void line_break(int so) //used for line break
+{
+    int star;
+    for(star=32; star > 0; star--)
+    {
+        printf("* * ");
+    }
+    printf("\n");
+}
 int main()
 {
-   int star;   //used for line breaks
+   int st;   //used for line breaks
    int A,B,M,T; //used for switches
    int num,a,n,r,per,comb,f,i,z;
    float x,y,c=0,d=1,e;
    double ang,rad,tr; //ang is to be inputed by the user, rad is the radian value of the angle
 
-   for (star=32; star > 0; star--) //line break
-   {
-       printf ("* * ");
-   }
-   printf ("\n");
+   line_break(st); //line break
 
    //The Welcoming statement.
    printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'.\n");
    printf("In this calculator, you can run programs like Basic Algebra, Trignometric Functions, Factorial Functions and Matrix Functions.\n\n");
 
-   for (star=32; star > 0; star--) //line break
-   {
-       printf ("* * ");
-   }
-   printf ("\n\n");
+   line_break(st); //line break
 
    printf("1. BASIC FUNCTIONS\n");
    printf("2. TRIGONOMETRIC FUNCTIONS\n");
@@ -35,11 +37,7 @@ int main()
    scanf("%d",&A);
 
    printf ("\n");
-   for (star=32; star > 0; star--) //line break
-   {
-      printf ("* * ");
-   }
-   printf ("\n\n");
+   line_break(st); //line break
     
    switch(A)
    {
@@ -57,10 +55,7 @@ int main()
               scanf("%d",&B);
                
               printf ("\n");
-              for (star=32; star > 0; star--) //line break
-              {
-                 printf ("* * ");
-              }
+              line_break(st); //line break
               printf ("\n\n");
                
               switch(B)
@@ -154,11 +149,7 @@ int main()
               printf("\nChoose any function: ");//user chooses their required choice of operation
               scanf("%d", &T);
 
-              printf("\n"); //line break
-              for (star=32; star > 0; star--) 
-              {
-                 printf ("* * ");
-              }
+              line_break(st);//line break
               printf ("\n\n");
      
               switch(T)
@@ -242,10 +233,7 @@ int main()
               scanf("%d",M);
 
               printf ("\n");
-              for (star=32; star > 0; star--) //line break
-              {
-                 printf ("* * ");
-              }
+              line_break(st); //line break
               printf ("\n\n");
               
               switch(M)
@@ -301,10 +289,7 @@ int main()
 
         
               printf ("\n");
-              for (star=32; star > 0; star--) //line break
-              {
-                 printf ("* * ");
-              }
+              line_break(st); //line break
               printf ("\n\n");
 
               switch()

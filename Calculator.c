@@ -281,15 +281,25 @@ int main()
                           scanf("%d",&n); 
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
+                          if(r>n)
+                          printf("MATH ERROR!")
+                          else
+                          {
                           result = permutations(n, r);
                           printf("Permutation = %d",result);
+                          }
                           break;
                  case 3 : printf("Enter the value of n : ");
                           scanf("%d",&n); 
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
+                          if(r>n)
+                          printf("MATH ERROR!")
+                          else
+                          {
                           result=combinations(n, r);
                           printf("Combination = %d",result);
+                          }
                           break;
                  default: printf("Invalid Menu Number");
                           break;

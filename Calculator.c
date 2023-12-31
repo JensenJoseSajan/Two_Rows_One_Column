@@ -305,7 +305,7 @@ int main()
               printf("6. SYMETRIC OR NOT\n");
               printf("7. NORM\n");
               printf("\nChoose an Operation : ");
-              scanf("%d",M);
+              scanf("%d",&M);
               if(0<M<4)
               {
                   for(i=0; i<ro; i++) //To read and display the values of the Matrix B

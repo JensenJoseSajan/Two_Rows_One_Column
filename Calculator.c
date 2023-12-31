@@ -39,9 +39,8 @@ int main()
 {
    int st;   //used for line breaks
    int A,B,M,F,T; //used for switches
-   int num,a,m,n,r,sum=0,r1,r2,c1,c2,result,i,j,k,z;
-   int co,ro;
-   int X[ro][co], Y[ro][co], C[ro][co], tra[i][j];
+   int num,a,m,n,r,sum=0,ro,co,rm,cm,r1,r2,c1,c2,result,i,j,k,z;
+   int X[ro][co],Y[ro][co],BM[rm][cm],C[ro][co],tra[i][j];
    float x,y,c=0,d=1,e,norm;
    double ang,rad,con,tr; //ang is to be inputed by the user, rad is the radian value of the angle
 
@@ -175,7 +174,7 @@ int main()
               printf("12. Inverse of Cosecant of angle\n");
 
               printf("\nChoose a Function : ");//user chooses their required choice of operation
-              scanf("%d", &T);
+              scanf("%d", &T); 
               //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
 
               printf("\n"); 
@@ -301,7 +300,8 @@ int main()
      //Matrix Functions //Jensen and Raaj's Part
      case 4 : printf("Enter the size of the matrix A : ");
               scanf("%d%d", &ro,&co);
-              //int X[ro][co], Y[ro][co], C[ro][co], tra[i][j];
+              printf("\n");
+              printf("Enter the values of the matrix A");
               printf("\n");
               for(i=0; i<ro; i++) //To read and display the values of the Matrix A
               {
@@ -334,31 +334,34 @@ int main()
               printf("7. NORM\n");
               printf("\nChoose an Operation : ");
               scanf("%d",&M);
-              if(0<M<4)
+              
+              printf ("\n");
+              line_break(st); //line break
+              
+              if(0<M<3)
               {
+                  printf("Enter the values of the matrix B");
+                  printf("\n");
                   for(i=0; i<ro; i++) //To read and display the values of the Matrix B
-	              {
+	               {
 	                  for(j=0; j<co; j++)
 	                  {
 	                     printf("B[%d][%d] = ", i, j);
 	                     scanf("%d", &Y[i][j] );
 	                  }
-	              }
-	              printf("\n");
-	              printf("Matrix B \n");
-	              for(i=0; i<ro; i++)
-	              {
+	               }
+	               printf("\n");
+	               printf("Matrix B \n");
+	               for(i=0; i<ro; i++)
+	               {
 	                  for(j=0; j<co; j++)
 	                  {
 	                     printf("%d\t", Y[i][j]);
 	                  }
 	                  printf ("\n");
-	          	  }
-              }    
-
+	          	   }
+              }
               printf ("\n");
-              line_break(st);//line break
-
               switch(M)
               {
                  case 1 : printf("The sum of the matrices is :- \n");
@@ -383,7 +386,30 @@ int main()
                               printf("\n");
                           }
                          break;
-                 case 3 : printf("Enter the order of Matrix A and Matrix B : ");
+                 case 3 : printf("Enter the size of the matrix B : ");
+                          scanf("%d%d", &rm,&cm);
+                          printf("\n");           
+                          printf("Enter the values of the matrix B");
+                          printf("\n");
+                          for(i=0; i<rm; i++) //To read and display the values of the Matrix B for Multiplication
+                          {
+                             for(j=0; j<cm; j++)
+                             {
+                                printf("B[%d][%d] = ", i, j);
+                                scanf("%d", &BM[i][j] );
+                             }
+                          }
+                          printf("\n");
+                          printf("Matrix B \n");
+                          for(i=0; i<rm; i++)
+                          {
+                             for(j=0; j<cm; j++)
+                             {
+                                printf("%d\t", BM[i][j]);
+                             }
+                             printf ("\n");
+                          }
+                          printf("Enter the order of Matrix A and Matrix B : ");
                           scanf("%d %d %d %d", &r1, &c1, &r2, &c2);
                           printf("\n");
                           if(c1==r2)
@@ -395,7 +421,7 @@ int main()
                                  {
                                     for(k=0; k<c1; k++)
                                     {
-                                       C[i][j] += X[i][k] * Y[k][j];
+                                       C[i][j] += X[i][k] * BM[k][j];
                                     }
                                     printf("%d\t", C[i][j]);
                                  }

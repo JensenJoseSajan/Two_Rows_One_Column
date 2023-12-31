@@ -238,7 +238,7 @@ int main()
               printf("2. PERMUTATION\n");
               printf("3. COMBINATION\n");
               printf("\nChoose a Function : ");
-              scanf("%d",F);
+              scanf("%d",&F);
 
               printf ("\n");
               line_break(st); //line break

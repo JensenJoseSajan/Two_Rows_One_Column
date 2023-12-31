@@ -302,7 +302,7 @@ int main()
               printf("3. MULTIPLICATION\n");
               printf("4. TRACE\n");
               printf("5. TRANSPOSE\n");
-              printf("6. SYMETRIC OR NOT\n");
+              printf("6. SYMMETRIC OR NOT\n");
               printf("7. NORM\n");
               printf("\nChoose an Operation : ");
               scanf("%d",&M);

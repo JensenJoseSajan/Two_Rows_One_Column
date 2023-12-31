@@ -176,54 +176,82 @@ int main()
 
               printf("\nChoose a Function : ");//user chooses their required choice of operation
               scanf("%d", &T);
-              printf("\nEnter the angle: ");
-              scanf("%lf",&ang);
-              rad=0.01745329*ang; //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
+              //the angle is converted to radians as trigonometric functions in 'math.h' header file only works with radian measures
 
               printf("\n"); 
               line_break(st); //line break
      
               switch(T)
               {
-                 case 1 : tr=sin(rad); 
+                 case 1 : printf("\nEnter the angle: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=sin(rad); 
                           printf("Sine of the angle : %f", tr);
                           break;
-                 case 2 : tr=cos(rad); 
+                 case 2 : printf("\nEnter the angle: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=cos(rad); 
                           printf("Cosine of the angle : %f", tr);
                           break;
-                 case 3 : tr=tan(rad); 
+                 case 3 : printf("\nEnter the angle: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=tan(rad); 
                           printf("Tangent of the angle : %f", tr);
                           break;
-                 case 4 : tr=1/tan(rad); 
+                 case 4 : printf("\nEnter the angle: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=1/tan(rad); 
                           printf("Cotangent of the angle : %f", tr); 
                           break;
-                 case 5 : tr=1/cos(rad); 
+                 case 5 : printf("\nEnter the angle: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=1/cos(rad); 
                           printf("Secant of the angle : %f", tr);
                           break;
-                 case 6 : tr=1/sin(rad); 
+                 case 6 : printf("\nEnter the angle: ");
+                          scanf("%lf",&ang);
+                          rad=0.01745329*ang;
+                          tr=1/sin(rad); 
                           printf("Cosecant of the angle : %f", tr);
                           break;
-                 case 7 : tr=asin(ang);
+                 case 7 : printf("\nEnter the value: ");
+                          scanf("%lf",&ang);
+                          tr=asin(ang);
                           con=tr*57.296;
                           printf("Inverse of Sine of the angle : %lf", con);
                           break;
-                 case 8 : tr=acos(ang);
+                 case 8 : printf("\nEnter the value: ");
+                          scanf("%lf",&ang);
+                          tr=acos(ang);
                           con=tr*57.296;
                           printf("Inverse of Cosine of the angle : %f", con);
                           break;
-                 case 9 : tr=atan(ang); 
+                 case 9 : printf("\nEnter the value: ");
+                          scanf("%lf",&ang);
+                          tr=atan(ang); 
                           con=tr*57.296;
                           printf("Inverse of Tangent of the angle : %f", con);
                           break;
-                 case 10: tr=1/atan(ang); 
+                 case 10: printf("\nEnter the value: ");
+                          scanf("%lf",&ang);
+                          tr=1/atan(ang); 
                           con=tr*57.296;
                           printf("Inverse of Cotangent of the angle : %f", con);
                           break;
-                 case 11: tr=1/acos(ang);    
+                 case 11: printf("\nEnter the value: ");
+                          scanf("%lf",&ang);
+                          tr=1/acos(ang);    
                           con=tr*57.296;
                           printf("Inverse of Secant of the angle : %f", con);
                           break;
-                 case 12: tr=1/asin(ang); 
+                 case 12: printf("\nEnter the value: ");
+                          scanf("%lf",&ang);
+                          tr=1/asin(ang); 
                           con=tr*57.296;
                           printf("Inverse of Cosecant of the angle : %f", con);
                           break;

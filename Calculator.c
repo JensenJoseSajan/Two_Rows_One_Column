@@ -272,24 +272,24 @@ int main()
               
               switch(F)
               {
-                 case 1 : printf("Enter the value of n : \n");
+                 case 1 : printf("Enter a number : ");
                           scanf("%d",&n);
                           result = factorial(n);
-                          printf("Factorial = %d\n",result);
+                          printf("Factorial of %d = %d",n,result);
                           break;
-                 case 2 : printf("Enter the value of n : \n");
+                 case 2 : printf("Enter the value of n : ");
                           scanf("%d",&n); 
-                          printf("Enter the value of r : \n");
+                          printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           result = permutations(n, r);
-                          printf("Permutation = %d\n",result);
+                          printf("Permutation = %d",result);
                           break;
-                 case 3 : printf("Enter the value of n : \n");
+                 case 3 : printf("Enter the value of n : ");
                           scanf("%d",&n); 
-                          printf("Enter the value of r : \n");
+                          printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           result=combinations(n, r);
-                          printf("Combination = %d\n",result);
+                          printf("Combination = %d",result);
                           break;
                  default: printf("Invalid Menu Number");
                           break;

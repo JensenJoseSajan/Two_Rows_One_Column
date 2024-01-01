@@ -141,7 +141,7 @@ int main()
                           scanf("%f",&x);
                           if(x==0)
                           {
-                              printf("MATH ERROR!\n");
+                              printf("\nMATH ERROR!\n");
                               printf("Please enter a number other than zero\n");
                           }
                           else
@@ -285,7 +285,7 @@ int main()
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           if(r>n)
-                          printf("MATH ERROR!");
+                          printf("\nMATH ERROR!");
                           else
                           {
                           result = permutations(n, r);
@@ -297,7 +297,7 @@ int main()
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           if(r>n)
-                          printf("MATH ERROR!");
+                          printf("\nMATH ERROR!");
                           else
                           {
                           result=combinations(n, r);
@@ -443,7 +443,7 @@ int main()
                           }
                           else
                           {
-                              printf("MATH ERROR!!");
+                              printf("\nMATH ERROR!!");
                           }
                           break;
                  case 4 : for(i=0;i<ro;i++)

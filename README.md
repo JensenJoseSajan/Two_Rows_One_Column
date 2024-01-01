@@ -21,7 +21,6 @@ Our Team cosists of 6 members.
 - CUBE ROOT
 - RECIPROCAL
 - POWER
-----
 2. #### TRIGONOMETRIC FUNCTIONS
 -
 -
@@ -35,12 +34,10 @@ Our Team cosists of 6 members.
 -
 -
 -
-----
 3. #### FACTORIAL
 - FACTORIAL
 - PERMUTATION
 - COMBINATION
-----
 4. #### MATRIX
 - ADDITION
 - SUBTRACTION

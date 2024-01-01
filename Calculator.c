@@ -39,7 +39,7 @@ int main()
 {
    int st;   //used for line breaks
    int A,B,M,F,T; //used for switches
-   int num,a,m,n,r,sum=0,ro,co,rm,cm,r1,r2,c1,c2,result,i,j,k,z;
+   int num,a,m,n,r,sum=0,ro,co,rm,cm,r1,r2,c1,c2,result,i,j,k,w=1,z;
    int X[ro][co],Y[ro][co],BM[rm][cm],C[ro][co],tra[i][j];
    float x,y,c=0,d=1,e,norm;
    double ang,rad,con,tr; //ang is to be inputed by the user, rad is the radian value of the angle
@@ -50,6 +50,9 @@ int main()
    printf("\nWelcome to the Basic Calculator by team 'Two_Rows_One_Column'.\n");
    printf("In this calculator, you can run programs like Basic Algebra, Trigonometric Functions, Factorial Functions and Matrix Functions.\n\n");
 
+   while(w!=0)
+   {
+   
    printf("\n");
    line_break(st); //line break
 
@@ -282,7 +285,7 @@ int main()
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           if(r>n)
-                          printf("MATH ERROR!")
+                          printf("MATH ERROR!");
                           else
                           {
                           result = permutations(n, r);
@@ -294,7 +297,7 @@ int main()
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           if(r>n)
-                          printf("MATH ERROR!")
+                          printf("MATH ERROR!");
                           else
                           {
                           result=combinations(n, r);
@@ -500,6 +503,21 @@ int main()
      
      default: printf("Invalid Menu Number");
               break; 
+   }
+
+   printf ("\n\n");
+   line_break(st); //line break
+
+   printf("Press 1 to Continue || Press any other number to Exit : ");
+   scanf("%d",&w);
+   if(w!=1)
+   {
+      printf("\n\n************\n");
+      printf("* Thankyou *\n");
+      printf("************");
+      break;
+   }
+   printf("\n");
    }
    
 return 0;

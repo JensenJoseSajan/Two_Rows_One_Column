@@ -71,7 +71,8 @@ Our Team cosists of 6 members.
 5. RAAJ RAMESH
 > Fill your part here
 6. Snith Shibu
-> I wrote the code to find the inverse trigonometric values of the angles. Those included the inverse values of sine, cosine, tangent, cotangent, secant and cosecant of the inputed angles.
+> I wrote the code to find the inverse trigonometric values of the angles. 
+> Those included the inverse values of sine, cosine, tangent, cotangent, secant and cosecant of the inputed angles.
 > All of the above functions were given in a switch case.
 > case 7: Inverse of the Sine of the Angle
 > case 8: Inverse of the Cosine of the Angle

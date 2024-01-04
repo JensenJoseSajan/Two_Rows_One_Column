@@ -7,7 +7,7 @@ Our Team cosists of 6 members.
 - JENSEN JOSE SAJAN
 - NIRANJAN R
 - RAAJ RAMESH
-- SNITH SHIBU
+- Snith Shibu
 ----
 ### CONTENTS
 1. #### BASIC FUNCTIONS
@@ -71,12 +71,12 @@ Our Team cosists of 6 members.
 5. RAAJ RAMESH
 > Fill your part here
 6. Snith Shibu
-> I wrote the code to find the inverse trigonometric values of the angles. Those included the inverse values of sine, cosine, tangent, cotangent, secant and cosecant of the inputed angles.
-> All of the above functions were given in a switch case.
-> case 7: Inverse of the Sine of the Angle
-> case 8: Inverse of the Cosine of the Angle
-> case 9: Inverse of the Tangent of the Angle
-> case 10: Inverse of the Cotangent of the Angle
-> case 11: Inverse of Secant of the Angle
-> case 12: Inverse of Cosecant of the Angle
-> I also contributed by creating a function for adding line breaks/section dividers. In the function 'line_break', I added a 'for-loop' which would print a star pattern. This would then be called within the function, whenever a line break was necessary.
+> I wrote the code to find the inverse trigonometric values of the angles. Those included the inverse values of sine, cosine, tangent, cotangent, secant and cosecant of the inputed angles.<br>
+> All of the above functions were given in a switch case.<br>
+> case 7: Inverse of the Sine of the Angle<br>
+> case 8: Inverse of the Cosine of the Angle<br>
+> case 9: Inverse of the Tangent of the Angle<br>
+> case 10: Inverse of the Cotangent of the Angle<br>
+> case 11: Inverse of Secant of the Angle<br>
+> case 12: Inverse of Cosecant of the Angle<br>
+> I also created a function for adding line breaks/section dividers withi the code. In the function 'line_break', I added a 'for-loop' which would print a star pattern. This would then be called within the function, whenever a line break was necessary.<br>

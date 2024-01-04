@@ -52,7 +52,7 @@ Our Team cosists of 6 members.
 > Fill your part here
 2. B S DEV DARSH
 > I wrote the code for finding the basic functions. The basic functions available are addition, subtraction, multiplication, division, square, square root, cube, cube root, reciprocal and power. All the functions are 
-  given inside the switch function.
+  given inside the switch function.  
 > case 1 - Addition  
 > case 2 - Subtraction  
 > case 3 - Multiplication  

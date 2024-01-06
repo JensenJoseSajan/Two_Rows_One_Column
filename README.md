@@ -80,9 +80,15 @@ Our Team cosists of 6 members.
 > case 6 : Symmetric or not  
 > case 7 : Norm  
 > A default case was also given, if the user selects any other option other than the options available.  
+<<<<<<< HEAD
 I also created a whoile loop to make this process infinite untill 1 is given in the input option. The initial infrastructure of the program was done by myself and the libraries were added and corrections were also made.
 4. NIRANJAN R  
 > I wrote the code to find the Factorial Function.Those include the factorial, permutaion and combination of the inputed number.
+=======
+I also created a while loop to make this process infinite untill 1 is given in the input option. The initial infrastructure of the program was done by myself and the libraries were added and corrections were also made.
+4. NIRANJAN R  
+> I wrote the code to find the Factorial Function. Those include the factorial, permutaion and combination of the inputed number.
+>>>>>>> 75721850e702264d0b74a272fe3ef06c621a8d63
 > Above function were given in a switch case.  
 > case 1 : To find the Factorial of a number.  
 > case 2 : To find the permutaion.  
@@ -112,4 +118,8 @@ We used the following compilers for our project :-
 - [GitHub Codespace](https://github.com/codespaces)
 - [Visual Studio Code](https://vscode.dev/)
 - [Online GDB](https://www.onlinegdb.com/)
+<<<<<<< HEAD
 - [Dev C++](https://www.bloodshed.net/)
+=======
+- [Dev C++](https://www.bloodshed.net/)
+>>>>>>> 75721850e702264d0b74a272fe3ef06c621a8d63

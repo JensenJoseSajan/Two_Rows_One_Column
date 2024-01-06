@@ -141,7 +141,7 @@ int main()
                           scanf("%f",&x);
                           if(x==0)
                           {
-                              printf("MATH ERROR!\n");
+                              printf("\nMATH ERROR!\n");
                               printf("Please enter a number other than zero\n");
                           }
                           else
@@ -285,7 +285,7 @@ int main()
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           if(r>n)
-                          printf("MATH ERROR!");
+                          printf("\nMATH ERROR!");
                           else
                           {
                           result = permutations(n, r);
@@ -297,7 +297,7 @@ int main()
                           printf("\nEnter the value of r : ");
                           scanf("%d",&r);
                           if(r>n)
-                          printf("MATH ERROR!");
+                          printf("\nMATH ERROR!");
                           else
                           {
                           result=combinations(n, r);
@@ -323,12 +323,14 @@ int main()
                   }
               }
               printf("\nMatrix A\n");
+              printf("\nMatrix A\n");
               for(i=0; i<ro; i++)
               {
                   for(j=0; j<co; j++)
                   {
                      printf("%d\t", X[i][j]);
                   }
+                  printf("\n");
                   printf("\n");
           	  }
                
@@ -359,6 +361,7 @@ int main()
 	                     scanf("%d", &Y[i][j] );
 	                  }
 	               }
+	               printf("\nMatrix B\n");
 	               printf("\nMatrix B\n");
 	               for(i=0; i<ro; i++)
 	               {

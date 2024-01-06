@@ -68,7 +68,9 @@ Our Team cosists of 6 members.
 > Fill your part here
 4. NIRANJAN R
 > I wrote the code to find the Factorial Function.Those include the permutaion and combination of the input number.
+
 > All of the above function are in the switch case.
+
 > case 1: To find the Factorial of a number
 > case 2: To find the permutaion
 > case 3: To find the combination.

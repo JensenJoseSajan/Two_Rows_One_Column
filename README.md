@@ -71,9 +71,12 @@ Our Team cosists of 6 members.
 
 > All of the above function are in the switch case.
 
-> case 1: To find the Factorial of a number
-> case 2: To find the permutaion
+> case 1: To find the Factorial of a number.
+
+> case 2: To find the permutaion.
+
 > case 3: To find the combination.
+
 > A default case for not inputing the correct case number. 
 5. RAAJ RAMESH
 > Fill your part here

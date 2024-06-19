@@ -7,7 +7,7 @@ Our Team cosists of 6 members.
 - JENSEN JOSE SAJAN
 - NIRANJAN R
 - RAAJ RAMESH
-- Snith Shibu
+- SNITH SHIBU
 ----
 ### CONTENTS
 1. #### BASIC FUNCTIONS
